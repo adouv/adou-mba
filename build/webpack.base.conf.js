@@ -41,7 +41,8 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue': 'mpvue',
-      '@': resolve('src')
+      '@': resolve('src'),
+      '@node': resolve('node_modules'),
     },
     symlinks: false,
     aliasFields: ['mpvue', 'weapp', 'browser'],
@@ -49,15 +50,15 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.(js|vue)$/,
-        loader: 'eslint-loader',
-        enforce: 'pre',
-        include: [resolve('src'), resolve('test')],
-        options: {
-          formatter: require('eslint-friendly-formatter')
-        }
-      },
+      // {
+      //   test: /\.(js|vue)$/,
+      //   loader: 'eslint-loader',
+      //   enforce: 'pre',
+      //   include: [resolve('src'), resolve('test')],
+      //   options: {
+      //     formatter: require('eslint-friendly-formatter')
+      //   }
+      // },
       {
         test: /\.vue$/,
         loader: 'mpvue-loader',

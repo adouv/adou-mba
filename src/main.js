@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App'
+//import "@node/font-awesome/scss/font-awesome.scss"
 
 Vue.config.productionTip = false
 App.mpType = 'app'
@@ -14,9 +15,25 @@ export default {
     pages: ['pages/logs/main', '^pages/index/main'],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
+      navigationBarBackgroundColor: '#ffffff',
+      navigationBarTitleText: 'MBA',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      color: "#333333",
+      selectedColor: "#4287FF",
+      backgroundColor: "#FFFFFF",
+      borderStyle: "black",
+      position: "bottom",
+      list: [{
+          pagePath: "pages/index/main",
+          text: "首页"
+        },
+        {
+          pagePath: "pages/counter/main",
+          text: "设置"
+        }
+      ]
     }
   }
 }
