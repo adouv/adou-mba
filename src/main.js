@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App'
-//import "@node/font-awesome/scss/font-awesome.scss"
+
+import 'font-awesome/scss/font-awesome.scss'
 
 Vue.config.productionTip = false
 App.mpType = 'app'
