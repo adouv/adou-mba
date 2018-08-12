@@ -13,7 +13,7 @@ export default {
   // 这个字段走 app.json
   config: {
     // 页面前带有 ^ 符号的，会被编译成首页，其他页面可以选填，我们会自动把 webpack entry 里面的入口页面加进去
-    pages: ['pages/logs/main', '^pages/index/main'],
+    pages: ['pages/logs/main', 'pages/index/main','^pages/exclusive/main','pages/drygoods/main','pages/reservation/main','pages/institution/main','pages/course/main'],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#ffffff',
@@ -27,12 +27,29 @@ export default {
       borderStyle: "black",
       position: "bottom",
       list: [{
-          pagePath: "pages/index/main",
-          text: "首页"
+          pagePath: "pages/exclusive/main",
+          text: "独家",
+          tag: "exclusive"
         },
         {
-          pagePath: "pages/counter/main",
-          text: "设置"
+          pagePath: "pages/drygoods/main",
+          text: "干货",
+          tag: "drygoods"
+        },
+        {
+          pagePath: "pages/reservation/main",
+          text: "预约",
+          tag: "reservation"
+        },
+        {
+          pagePath: "pages/institution/main",
+          text: "院校",
+          tag: "institution"
+        },
+        {
+          pagePath: "pages/course/main",
+          text: "课程",
+          tag: "course"
         }
       ]
     }
