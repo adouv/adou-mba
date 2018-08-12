@@ -1,8 +1,9 @@
-
 <template>
     <!--独家-->
     <div class="ad-exclusive">
-        {{msg}}
+        <div class="banner">
+          <!-- <img src="../../assets/images/banner/home_banner_one.jpg" /> -->
+        </div>
     </div>
 </template>
 
@@ -17,7 +18,9 @@ export default {
 };
 </script>
 
-<style lang="sass" scoped>
-
+<style lang="scss" scoped>
+.ad-exclusive{
+  border:1px solid #f00;
+}
 </style>
 
