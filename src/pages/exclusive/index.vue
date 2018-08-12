@@ -2,7 +2,7 @@
     <!--独家-->
     <div class="ad-exclusive">
         <div class="banner">
-          <!-- <img src="../../assets/images/banner/home_banner_one.jpg" /> -->
+          <img src="../../assets/img/banner/home_banner_one.jpg" />
         </div>
     </div>
 </template>
