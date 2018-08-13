@@ -99,6 +99,50 @@
           </li>
         </ul>
       </div>
+      <!--导师团队-->
+      <div class="exclusive-title exclusive-dstd">
+        <h2 class="title">
+          导师团队<i></i>
+        </h2>
+        <ul>
+          <li>
+            <image src="http://www.bqeducation.com/public//uploads/20180426/9a37f50d3f2bbf15da2143cf3db1a63c.jpg" />
+            <p>秦老师</p>
+            <span>博勤嘉成小城</span>
+            <span>香港理工大学</span>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public//uploads/20180426/4ba30063eeaa7fc929d7be706e15358c.jpg" />
+            <p>孙老师</p>
+            <span>数学高级讲师</span>
+            <span>帝国理工大学</span>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public//uploads/20180426/49d41dbdaa7872759332963bf63c1b1c.jpg" />
+            <p>祝老师</p>
+            <span>英语考研组组长</span>
+            <span>英国谢菲尔德</span>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public//uploads/20180426/19e7c92d000d6e0b00ff3c5a18862d88.jpg" />
+            <p>张老师</p>
+            <span>逻辑资深讲师</span>
+            <span>中国人民大学博士</span>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public//uploads/20180426/65ec205ee670fe85801a559dc97652f3.jpg" />
+            <p>思聪老师</p>
+            <span>面试研究院导师</span>
+            <span>伦敦政治经济学院</span>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public//uploads/20180426/33bc6a32f4f1ac053d7d01dbd9a1fcd1.jpg" />
+            <p>王老师</p>
+            <span>面试研究院导师</span>
+            <span>香港科技大学</span>
+          </li>
+        </ul>
+      </div>
     </div>
 </template>
 
