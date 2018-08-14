@@ -143,6 +143,112 @@
           </li>
         </ul>
       </div>
+      <!--名校OFFER榜-->
+      <div class="exclusive-title exclusive-mxofferb">
+        <h2 class="title">
+          名校OFFER榜<i></i>
+        </h2>
+        <ul>
+          <li>
+            <image src="http://www.bqeducation.com/public/uploads/20180319/f4db8ed56107468c25f4f78d9253a3de.jpg" />
+            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/8185075adf305d215c3ababfd0ab6e26.png" />
+            <h2>清华五道口金融学院</h2>
+            <p>录取人数:<span>11人</span></p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public/uploads/20180319/a68d7cedd67b17d4dc76e8c608eafd8b.jpg" />
+            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/faf1d6d05c35d68b06867024bc061d4b.png" />
+            <h2>清华大学经济管理学院</h2>
+            <p>录取人数:<span>43人</span></p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public/uploads/20180319/faa3954dce4a056491fbc6852d4c92a6.jpg" />
+            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/197ec92bfab5d22fd49ae5cbea4ebd38.jpg" />
+            <h2>北京大学光华管理学院</h2>
+            <p>录取人数:<span>51人</span></p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public/uploads/20180316/aade999cf29577e561c8252f8085164f.jpg" />
+            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/1bf0d23cced09a9c05eb94b4ed1ccfb1.jpg" />
+            <h2>北大国家发展研究院</h2>
+            <p>录取人数:<span>22人</span></p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public/uploads/20180319/3f3b803a9fa99cc0c72d5aac90119c9b.jpg" />
+            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/b77c3b6644ce14921f70c9a9128a2727.jpg" />
+            <h2>中国人民大学</h2>
+            <p>录取人数:<span>74人</span></p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public/uploads/20180319/66d9c0e4d51d3db241909757b81f3d69.jpg" />
+            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/43b5e3239e5e7743cd1819d28d3851e8.jpg" />
+            <h2>中央财经大学</h2>
+            <p>录取人数:<span>119人</span></p>
+          </li>
+          <!-- <li>
+            <image src="http://www.bqeducation.com/public/uploads/20180319/b3c591882159952d89af7c76a472e9c5.jpg" />
+            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/556e3f4c69c708b714d784531467fa9c.jpg" />
+            <h2>对外经济贸易大学</h2>
+            <p>录取人数:<span>68人</span></p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public/uploads/20180319/88ba70227bc27aac20ca9019dcf08f11.jpg" />
+            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/c4d0087834a93b832663feb2b73c2e93.jpg" />
+            <h2>北京理工大学</h2>
+            <p>录取人数:<span>121人</span></p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public/uploads/20180319/73d568a2505077637f4effa2935587cd.jpg" />
+            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/63d3e7914934b5f4d54a49ee144a29cc.jpg" />
+            <h2>北京师范大学</h2>
+            <p>录取人数:<span>96人</span></p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public/uploads/20180319/197c41150beec4568c3fbc5f8f1da9d9.jpg" />
+            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/bb8c6d62de03e10b6d0ca0abeea97630.jpg" />
+            <h2>北京航空航天大学</h2>
+            <p>录取人数:<span>76人</span></p>
+          </li> -->
+        </ul>
+      </div>
+      <!--学员案例-->
+      <div class="exclusive-title exclusive-xyal">
+        <h2 class="title">
+          学员案例<i></i>
+        </h2>
+        <ul>
+          <li>
+            <image src="http://www.bqeducation.com/public//uploads/20180404/2a58b320436db17b0ff8c591e081b4ab.jpg" mode="aspectFill" />
+            <h2><span>张旭</span><i>|</i>政府部门</h2>
+            <p>清华大学</p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public//uploads/20180406/836a0c703843a7ca382c0f228f1d6e8a.jpg" mode="aspectFill" />
+            <h2><span>王昭阳</span><i>|</i>互联网</h2>
+            <p>清华大学</p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public//uploads/20180404/2ac19c7fce039e532bf56638e4d54a89.png" mode="aspectFill" />
+            <h2><span>张晓</span><i>|</i>房地产</h2>
+            <p>北京大学</p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public//uploads/20180406/4b62f0df7d8dfab6890dccc29f1810da.jpg" mode="aspectFill" />
+            <h2><span>王浩</span><i>|</i>IT服务</h2>
+            <p>北京大学</p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public//uploads/20180406/135607fb9a03996e88016a433a877ef3.jpg" mode="aspectFill" />
+            <h2><span>高博</span><i>|</i>金融</h2>
+            <p>人民大学</p>
+          </li>
+          <li>
+            <image src="http://www.bqeducation.com/public//uploads/20180404/73b695670511ac3ca30e14bffdbf7561.png" mode="aspectFill" />
+            <h2><span>张旭</span><i>|</i>金融</h2>
+            <p>中国人民大学</p>
+          </li>
+        </ul>
+      </div>
     </div>
 </template>
 
