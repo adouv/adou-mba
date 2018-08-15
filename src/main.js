@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App'
+import store from './store'
+import router from './router'
 
 import 'font-awesome/scss/font-awesome.scss'
 import '@static/scss/index.scss'
@@ -7,8 +9,12 @@ import '@static/scss/index.scss'
 Vue.config.productionTip = false
 App.mpType = 'app'
 
+Vue.prototype.$store = store
+
 const app = new Vue(App)
 app.$mount()
+
+let pages=[];
 
 export default {
   // 这个字段走 app.json
