@@ -13,15 +13,14 @@
       </swiper>
       <div class="drygoods-tab">
         <ul>
-          <li class="current">
-            <a>MBA</a>
-          </li>
-          <li>
-            <a>MEM</a>
+          <li :class="tabList.currentTab==item.id?'current':''" v-for="(item,index) in tabList.item" :index="index" :key="item.id" @click="switchTab(item);">
+            <div>{{item.text}}</div>
           </li>
         </ul>
       </div>
-      <component :is="tabTo"></component>
+      <!--MBA\MEM-->
+      <mba :tabItem="tabList.item[0]" v-if="tabList.currentTab==0"></mba>
+      <mem :tabItem="tabList.item[1]" v-if="tabList.currentTab==1"></mem>
     </div>
 </template>
 
@@ -37,7 +36,10 @@ export default {
   data() {
     return {
       msg: "干货",
-      tabTo: "mba",
+      tabList: {
+        currentTab: 0,
+        item: [{ id: 0, text: "MBA" }, { id: 1, text: "MEM" }]
+      },
       movies: [
         {
           id: 1,
@@ -66,6 +68,11 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    switchTab(item) {
+      this.tabList.currentTab = item.id;
+    }
   }
 };
 </script>

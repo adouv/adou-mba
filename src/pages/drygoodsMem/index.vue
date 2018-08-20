@@ -1,11 +1,12 @@
 <template>
-    <div>mem</div>
+    <div style="border:1px solid #f00;">mem{{tabItem.id}}</div>
 </template>
 
 <script>
 export default {
-    name:"memComponent"
-}
+  name: "memComponent",
+  props: ["tabItem"]
+};
 </script>
 
 <style lang="sass" scoped>
