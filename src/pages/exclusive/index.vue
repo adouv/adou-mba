@@ -1,7 +1,7 @@
 <template>
     <!--独家-->
     <div class="ad-exclusive">
-      <swiper class="exclusive-swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
           <block v-for="(item, index) in movies" :index="index" :key="item.id">
               <swiper-item>
                 <a href="http://www.baidu.com/">
@@ -185,30 +185,6 @@
             <h2>中央财经大学</h2>
             <p>录取人数:<span>119人</span></p>
           </li>
-          <!-- <li>
-            <image src="http://www.bqeducation.com/public/uploads/20180319/b3c591882159952d89af7c76a472e9c5.jpg" />
-            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/556e3f4c69c708b714d784531467fa9c.jpg" />
-            <h2>对外经济贸易大学</h2>
-            <p>录取人数:<span>68人</span></p>
-          </li>
-          <li>
-            <image src="http://www.bqeducation.com/public/uploads/20180319/88ba70227bc27aac20ca9019dcf08f11.jpg" />
-            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/c4d0087834a93b832663feb2b73c2e93.jpg" />
-            <h2>北京理工大学</h2>
-            <p>录取人数:<span>121人</span></p>
-          </li>
-          <li>
-            <image src="http://www.bqeducation.com/public/uploads/20180319/73d568a2505077637f4effa2935587cd.jpg" />
-            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/63d3e7914934b5f4d54a49ee144a29cc.jpg" />
-            <h2>北京师范大学</h2>
-            <p>录取人数:<span>96人</span></p>
-          </li>
-          <li>
-            <image src="http://www.bqeducation.com/public/uploads/20180319/197c41150beec4568c3fbc5f8f1da9d9.jpg" />
-            <image class="exclusive-school-logo" src="http://www.bqeducation.com/public/uploads/20180410/bb8c6d62de03e10b6d0ca0abeea97630.jpg" />
-            <h2>北京航空航天大学</h2>
-            <p>录取人数:<span>76人</span></p>
-          </li> -->
         </ul>
       </div>
       <!--学员案例-->
