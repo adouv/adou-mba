@@ -1,7 +1,0 @@
-{
-    "component": true,
-    "usingComponents": {
-      "mba": "pages/drygoodsMba/main",
-      "mem": "pages/drygoodsMem/main"
-    }
-  }

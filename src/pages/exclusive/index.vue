@@ -30,7 +30,7 @@
         </ul>
       </div>
       <!--MBA双证研究生学历为什么如此受欢迎-->
-      <div class="exclusive-title exclusive-mbaszyjs">
+      <div class="global-title exclusive-mbaszyjs">
         <h2 class="title">
           MBA双证研究生学历为什么如此受欢迎?<i></i>
         </h2>
@@ -45,7 +45,7 @@
         </ul>
       </div>
       <!--选择博勤嘉成-->
-      <div class="exclusive-title exclusive-xzbqjc">
+      <div class="global-title exclusive-xzbqjc">
         <h2 class="title">
           选择博勤嘉成<i></i>
         </h2>
@@ -100,7 +100,7 @@
         </ul>
       </div>
       <!--导师团队-->
-      <div class="exclusive-title exclusive-dstd">
+      <div class="global-title exclusive-dstd">
         <h2 class="title">
           导师团队<i></i>
         </h2>
@@ -144,7 +144,7 @@
         </ul>
       </div>
       <!--名校OFFER榜-->
-      <div class="exclusive-title exclusive-mxofferb">
+      <div class="global-title exclusive-mxofferb">
         <h2 class="title">
           名校OFFER榜<i></i>
         </h2>
@@ -188,7 +188,7 @@
         </ul>
       </div>
       <!--学员案例-->
-      <div class="exclusive-title exclusive-xyal">
+      <div class="global-title exclusive-xyal">
         <h2 class="title">
           学员案例<i></i>
         </h2>

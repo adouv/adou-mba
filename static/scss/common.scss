@@ -4,4 +4,28 @@
   justify-content: center;
 }
 
+/*全局标题*/
 
+.global-title {
+  background: #fff;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  .title {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    text-indent: 40rpx;
+    position: relative;
+    i {
+      display: block;
+      border-left: 3px solid $color1;
+      height: 15px;
+      position: absolute;
+      top: 35rpx;
+      left: 10px;
+    }
+  }
+}

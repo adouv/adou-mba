@@ -1,0 +1,158 @@
+.ad-drygoods-mba {
+  background: $bodyBackg;
+  /*MBA是什么*/
+  .drygoods-mba-ssmw {
+    .content {
+      padding: 0 10px;
+      h3 {
+        font-size: 14.5px;
+        font-weight: bold;
+        color: $color4;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: justify; //文字两端对齐
+        margin-top: 10px;
+      }
+      image {
+        width: 100%;
+        height: 220px;
+      }
+    }
+  }
+  /*为什么要报MBA*/
+  .drygoods-mba-wsmybmba {
+    ul {
+      @extend .flex;
+      align-items: flex-start !important;
+      flex-wrap: wrap;
+      li {
+        width: 40%;
+        margin-top: 10px;
+        p {
+          position: relative;
+          font-size: 14px;
+          color: $color1;
+          font-weight: bold;
+          i {
+            display: block;
+            width: 5px;
+            height: 5px;
+            background: $color1;
+            position: absolute;
+            left: -8px;
+            top: 3px;
+          }
+        }
+        i {
+          display: block;
+          border-top: 1px solid $color1;
+          width: 100%;
+          margin: 5px 0;
+        }
+        div {
+          display: block;
+          line-height: 22px;
+          font-size: 12px;
+          text-align: justify;
+          color: $color4;
+        }
+      }
+      /*li奇数设置外面局右侧10像素*/
+      li:nth-child(2n+1) {
+        margin-right: 30px;
+      }
+    }
+  }
+  /*报考条件*/
+  .drygoods-mba-bktj {
+    ul {
+      @extend .flex;
+      flex-wrap: wrap;
+      li {
+        outline: 2px solid $color1;
+        width: 45%;
+        text-align: center;
+        margin-top: 60px;
+        image {
+          width: 88px;
+          height: 88px;
+          margin-top: -44px;
+          position: relative;
+          z-index: 100;
+        }
+        h3 {
+          font-size: 16px;
+          font-weight: bold;
+          color: $color1;
+          margin: 10px 0;
+        }
+        p {
+          font-size: 14px;
+        }
+        p:last-child {
+          margin: 10px 0;
+        }
+      }
+      /*li奇数设置外面局右侧10像素*/
+      li:nth-child(2n+1) {
+        margin-right: 10px;
+      }
+    }
+  }
+  /*备考流程-提前考试*/
+  .drygoods-mba-bklctims {
+    .content {
+      padding: 0 10px;
+      image {
+        width: 100%;
+        height: 130px;
+      }
+    }
+  }
+  /*备考流程-笔试环节*/
+  .drygoods-mba-bklcbshj {
+    image {
+      margin-top: 10px;
+    }
+  }
+  /*MBA考试形式*/
+  .drygoods-mba-mbaksxs {
+    .content {
+      padding: 0 10px;
+      image {
+        width: 100%;
+        height: 140px;
+      }
+      h3 {
+        font-size: 17px;
+        color: $color1;
+        border-bottom: 2px solid $color1;
+        padding: 10px 0;
+        font-weight: bold;
+        span {
+          font-size: 15px;
+          font-weight: normal !important;
+          margin-left: 10px;
+        }
+      }
+      ul {
+        margin-bottom: 10px;
+        li {
+          @extend .flex;
+          align-items: flex-start !important;
+          div {
+            font-size: 15px;
+            margin-top: 5px;
+          }
+          div:first-child {
+            width: 100px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
