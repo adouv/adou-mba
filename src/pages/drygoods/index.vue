@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import mbaComponent from "@/pages/drygoodsMba";
-import memComponent from "@/pages/drygoodsMem";
+import mbaComponent from "@/pages/drygoods/mba";
+import memComponent from "@/pages/drygoods/mem";
 export default {
   name: "drygoodsComponent",
   components: {
