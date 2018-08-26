@@ -1,0 +1,19 @@
+.ad-reservation {
+  .reservation-tab {
+    ul {
+      @extend .flex;
+      li {
+        width: 50%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        background: $color3;
+      }
+      li.current {
+        color: $color3;
+        background: none;
+      }
+    }
+  }
+}
