@@ -1,0 +1,87 @@
+.ad-institution {
+  background: $bodyBackg;
+  padding-bottom: 20px;
+  .institution-tab {
+    ul {
+      @extend .flex;
+      li {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        background: $color3;
+        padding: 0 15px;
+        div {
+          font-size: 18px;
+          span {
+            margin-left: 10px;
+          }
+        }
+      }
+      li.current {
+        color: $color3;
+        background: none;
+      }
+      li:last-child {
+        flex: 1;
+        display: flex;
+        padding: 0;
+        input {
+          flex: 1;
+          border-radius: 5px;
+          background: #fff;
+          height: 30px;
+          line-height: 30px;
+          font-size: 12px;
+          text-align: left;
+          padding: 0 5px;
+          margin: 10px 10px 0 10px;
+        }
+        span {
+          font-size: 16px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.ad-institution-mba {
+  >ul {
+    >li {
+      display: flex;
+      background: #fff;
+      width: 95%;
+      margin: 10px auto 10px auto;
+      padding: 10px 0;
+      image {
+        width: 100px;
+        height: 100px;
+      }
+      div {
+        flex: 1;
+        padding: 0 10px;
+        h2 {
+          color: #333;
+          font-weight: bold;
+          border-bottom: 2px solid $color1;
+          span {
+            display: block;
+            font-size: 12px;
+            font-weight: normal;
+            color: $color1;
+            margin: 5px 0;
+          }
+        }
+        >ul {
+          margin-top: 4px;
+          li {
+            font-size: 15px;
+            line-height: 25px;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+}

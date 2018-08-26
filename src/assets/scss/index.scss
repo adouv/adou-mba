@@ -5,12 +5,12 @@ $color4:#2f696a;
 $bodyBackg:#f3f2ee;
 $html-font-size: 16px;
 $refer-width: 1366px;
-$device-width: 1025px, 1366px;
+$device-width: 1025px,
+1366px;
 $font-sizes: (14px, 16px, 18px, 20px);
-
 // 根据rem为各个元素计算大小
 @function computer($px) {
-	@return $px / $html-font-size * 1rem;
+  @return $px / $html-font-size * 1rem;
 }
 
 @import './common.scss';
@@ -21,6 +21,9 @@ $font-sizes: (14px, 16px, 18px, 20px);
 /*干货*/
 
 @import './drygoods.scss';
-
 /*预约*/
+
 @import './reservation.scss';
+/*院校*/
+
+@import './institution.scss';

@@ -31,6 +31,8 @@ export default {
       'pages/reservation/reservActivity/main',
       'pages/reservation/reservCoures/main',
       'pages/institution/main',
+      'pages/institution/institutionMba/main',
+      'pages/institution/institutionMem/main',
       'pages/course/main'
     ],
     window: {
