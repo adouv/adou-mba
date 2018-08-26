@@ -4,7 +4,8 @@ import store from './store'
 import router from './router'
 
 import 'font-awesome/scss/font-awesome.scss'
-import '@static/scss/index.scss'
+import 'iconfontone/iconfont.css';
+import './assets/scss/index.scss'
 
 Vue.config.productionTip = false
 App.mpType = 'app'
@@ -18,7 +19,20 @@ export default {
   // 这个字段走 app.json
   config: {
     // 页面前带有 ^ 符号的，会被编译成首页，其他页面可以选填，我们会自动把 webpack entry 里面的入口页面加进去
-    pages: ['pages/logs/main', 'pages/index/main', '^pages/exclusive/main', 'pages/drygoods/main', 'pages/drygoods/mba/main', 'pages/drygoods/mem/main', 'pages/reservation/main', 'pages/reservation/reserv/main', 'pages/reservation/reservActivity/main', 'pages/reservation/reservCoures/main', 'pages/institution/main', 'pages/course/main'],
+    pages: [
+      'pages/logs/main',
+      'pages/index/main',
+      '^pages/exclusive/main',
+      'pages/drygoods/main',
+      'pages/drygoods/mba/main',
+      'pages/drygoods/mem/main',
+      'pages/reservation/main',
+      'pages/reservation/reservForm/main',
+      'pages/reservation/reservActivity/main',
+      'pages/reservation/reservCoures/main',
+      'pages/institution/main',
+      'pages/course/main'
+    ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#ffffff',

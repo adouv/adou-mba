@@ -1,5 +1,7 @@
-.ad-drygoods {
-  .drygoods-tab {
+.ad-reservation {
+  background: $bodyBackg;
+  padding-bottom: 20px;
+  .reservation-tab {
     ul {
       @extend .flex;
       li {
@@ -9,6 +11,12 @@
         text-align: center;
         color: #fff;
         background: $color3;
+        div {
+          font-size: 18px;
+          span {
+            margin-left: 10px;
+          }
+        }
       }
       li.current {
         color: $color3;
@@ -17,3 +25,6 @@
     }
   }
 }
+
+@import './reservationCourse.scss';
+@import './reservationForm.scss';

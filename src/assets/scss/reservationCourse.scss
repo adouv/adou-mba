@@ -1,0 +1,57 @@
+.ad-reserv-course {
+  ul {
+    li {
+      border-radius: 5px;
+      width: 95%;
+      margin: 20px auto;
+      justify-content: center;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 1px 1px 20px #888;
+      image {
+        border-radius: 5px;
+        width: 96%;
+        height: 144px;
+        margin: 1% auto;
+      }
+      >div,
+      >h2 {
+        width: 96%;
+      }
+      >h2 {
+        color: #333;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      >div {
+        position: relative;
+        margin-bottom: 20px;
+        display: flex;
+        div {
+          color: #fc5f00;
+          span {
+            color: #ccc;
+            font-size: 11px;
+            text-decoration: line-through;
+          }
+          span.decoration {
+            text-decoration: none;
+          }
+        } 
+         div:last-child {
+          border-radius: 5px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background: $color3;
+          color: #fff;
+          padding: 5px 10px;
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

@@ -14,32 +14,37 @@
       <div class="reservation-tab">
         <ul>
           <li :class="tabList.currentTab==item.id?'current':''" v-for="(item,index) in tabList.item" :index="index" :key="item.id" @click="switchTab(item);">
-            <div>{{item.text}}</div>
+            <div class="icon iconfont" :class="item.icon"><span>{{item.text}}</span></div>
           </li>
         </ul>
       </div>
       <!--MBA\MEM-->
-      <reservCoures :tabItem="tabList.item[0]" v-if="tabList.currentTab==0"></reservCoures>
-      <reservActivity :tabItem="tabList.item[1]" v-if="tabList.currentTab==1"></reservActivity>
-      <reserv :tabItem="tabList.item[2]" v-if="tabList.currentTab==2"></reserv>
+      <course :tabItem="tabList.item[0]" v-if="tabList.currentTab==0"></course>
+      <activity :tabItem="tabList.item[1]" v-if="tabList.currentTab==1"></activity>
+      <form :tabItem="tabList.item[2]" v-if="tabList.currentTab==2"></form>
     </div>
 </template>
 
 <script>
-import reservCoures from "@/pages/reservation/reservCoures";
-import reservActivity from "@/pages/reservation/reservActivity";
-import reserv from "@/pages/reservation/reserv";
+import reservCouresComponent from "@/pages/reservation/reservCoures";
+import reservActivityComponent from "@/pages/reservation/reservActivity";
+import reservFormComponent from "@/pages/reservation/reservForm";
 export default {
   name: "reservationComponent",
+  components: {
+    course: reservCouresComponent,
+    activity: reservActivityComponent,
+    form: reservFormComponent
+  },
   data() {
     return {
       msg: "预约",
       tabList: {
         currentTab: 0,
         item: [
-          { id: 0, text: "课程" },
-          { id: 1, text: "活动" },
-          { id: 2, text: "预约" }
+          { id: 0, text: "课程", icon: "icon-kechengbiao" },
+          { id: 1, text: "活动", icon: "icon-huodong" },
+          { id: 2, text: "预约", icon: "icon-yuyue" }
         ]
       },
       movies: [

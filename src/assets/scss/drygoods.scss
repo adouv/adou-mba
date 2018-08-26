@@ -1,5 +1,5 @@
-.ad-reservation {
-  .reservation-tab {
+.ad-drygoods {
+  .drygoods-tab {
     ul {
       @extend .flex;
       li {
@@ -9,6 +9,9 @@
         text-align: center;
         color: #fff;
         background: $color3;
+        div {
+          font-size: 18px;
+        }
       }
       li.current {
         color: $color3;
@@ -17,3 +20,6 @@
     }
   }
 }
+
+@import './drygoodsMba.scss';
+@import './drygoodsMem.scss';
