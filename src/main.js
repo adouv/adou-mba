@@ -38,7 +38,7 @@ export default {
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#ffffff',
-      navigationBarTitleText: 'MBA',
+      navigationBarTitleText: 'B&Q教育',
       navigationBarTextStyle: 'black'
     },
     tabBar: {
