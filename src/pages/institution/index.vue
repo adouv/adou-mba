@@ -32,14 +32,14 @@ import institutionMbaComponent from "@/pages/institution/institutionMba";
 import institutionMemComponent from "@/pages/institution/institutionMem";
 export default {
   name: "institutionComponent",
-    components: {
+  components: {
     mba: institutionMbaComponent,
     mem: institutionMemComponent
   },
   data() {
     return {
       msg: "院校",
-            tabList: {
+      tabList: {
         currentTab: 0,
         item: [{ id: 0, text: "MBA" }, { id: 1, text: "MEM" }]
       },
@@ -72,10 +72,16 @@ export default {
       ]
     };
   },
-    methods: {
+  methods: {
     switchTab(item) {
       this.tabList.currentTab = item.id;
     }
+  },
+  onShareAppMessage(res) {
+    return {
+      title: "B&Q教育",
+      path: "/pages/institution/main"
+    };
   }
 };
 </script>
