@@ -73,6 +73,12 @@ export default {
     switchTab(item) {
       this.tabList.currentTab = item.id;
     }
+  },
+  onShareAppMessage(res) {
+    return {
+      title: "B&Q教育",
+      path: "/pages/drygoods/main"
+    };
   }
 };
 </script>

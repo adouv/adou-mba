@@ -195,6 +195,12 @@ export default {
         }
       ]
     };
+  },
+  onShareAppMessage(res) {
+    return {
+      title: "B&Q教育",
+      path: "/pages/course/main"
+    };
   }
 };
 </script>
