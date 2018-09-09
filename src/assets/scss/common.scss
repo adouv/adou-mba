@@ -4,12 +4,19 @@
   justify-content: center;
 }
 
-/*全局标题*/
+.banner {
+  height: 120px;
+  image {
+    height: 120px;
+  }
+}
 
+/*全局标题*/
 .global-title {
   background: #fff;
   margin-top: 10px;
   padding-bottom: 20px;
+
   .title {
     padding-top: 10px;
     font-size: 18px;
@@ -19,6 +26,7 @@
     display: flex;
     text-indent: 40rpx;
     position: relative;
+
     i {
       display: block;
       border-left: 3px solid $color1;

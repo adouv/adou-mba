@@ -2,15 +2,9 @@
 <template>
     <!--预约-->
     <div class="ad-reservation">
-      <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
-          <block v-for="(item, index) in movies" :index="index" :key="item.id">
-              <swiper-item>
-                <a href="http://www.baidu.com/">
-                  <image :src="item.url" class="slide-image" mode="aspectFill" />
-                </a>
-              </swiper-item>
-          </block>
-      </swiper>
+      <div class="banner">
+        <image src="http://www.bqeducation.com/public/uploads/20180426/fed7f4060f3f2af6d1807263d490171a.jpg" mode="aspectFill" />
+      </div>
       <div class="reservation-tab">
         <ul>
           <li :class="tabList.currentTab==item.id?'current':''" v-for="(item,index) in tabList.item" :index="index" :key="item.id" @click="switchTab(item);">

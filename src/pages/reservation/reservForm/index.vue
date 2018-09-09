@@ -17,6 +17,9 @@
           <label>留言</label>
           <textarea rows="20" cols="10" placeholder="有什么问题请讲"></textarea>
         </li>
+        <li>
+          <div class="btn-more">立即提交</div>
+        </li>
       </ul>
     </div>
 </template>
