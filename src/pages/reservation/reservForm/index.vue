@@ -10,8 +10,8 @@
           <input type="text" name="contact" id="contact" placeholder="请输入您的电话/微信" />
         </li>
         <li>
-          <label>申请专业</label>
-          <input type="text" name="profession" id="profession" placeholder="请输入您的申请专业" />
+          <label>意向院校</label>
+          <input type="text" name="profession" id="profession" placeholder="请输入您的意向院校" />
         </li>
         <li>
           <label>留言</label>
