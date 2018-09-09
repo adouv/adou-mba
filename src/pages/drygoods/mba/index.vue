@@ -68,25 +68,25 @@
         </h2>
         <ul>
           <li>
-            <image src="/static/img/mem_bkbj.png" />
+            <image src="http://www.a-dou.com/mba/image/mem_bkbj.png" />
             <h3>专科学历</h3>
             <p>毕业之日起至2019年9月</p>
             <p>满足五年工作年限</p>
           </li>
           <li>
-            <image src="/static/img/mem_bkbj.png" />
+            <image src="http://www.a-dou.com/mba/image/mem_bkbj.png" />
             <h3>专科学历</h3>
             <p>毕业之日起至2019年9月</p>
             <p>满足五年工作年限</p>
           </li>
           <li>
-            <image src="/static/img/mem_bkbj.png" />
+            <image src="http://www.a-dou.com/mba/image/mem_bkbj.png" />
             <h3>专科学历</h3>
             <p>毕业之日起至2019年9月</p>
             <p>满足五年工作年限</p>
           </li>
           <li>
-            <image src="/static/img/mem_bkbj.png" />
+            <image src="http://www.a-dou.com/mba/image/mem_bkbj.png" />
             <h3>专科学历</h3>
             <p>毕业之日起至2019年9月</p>
             <p>满足五年工作年限</p>
@@ -107,7 +107,7 @@
         <h2 class="title">
           备课流程-笔试环节<i></i>
         </h2>
-        <image src="/static/img/bklc.png" mode="aspectFit" />
+        <image src="http://www.a-dou.com/mba/image/bklc.png" mode="aspectFit" />
       </div>
       <!--MBA考试形式-->
       <div class="global-title drygoods-mba-mbaksxs">
@@ -115,38 +115,38 @@
           MBA考试形式<i></i>
         </h2>
         <div class="content">
-          <image src="/static/img/ksxs.png" mode="aspectFit" />
+          <image src="http://www.bqeducation.com/public/static/mobi/images/mba.png" mode="aspectFit" />
           <h3>提前面试<span>部分院校项目开设提前面试</span></h3>
           <ul>
             <li>
-              <div>面试时间：</div>
-              <div>各院校自主确定面试时间，一般在5-10月组织多轮次面试。</div>
+              <strong>面试时间：</strong>
+              <p>各院校自主确定面试时间，一般在5-10月组织多轮次面试。 </p>
             </li>
             <li>
-              <div>面试形式：</div>
-              <div>面试形式主要分两种，第一种是个人面试；第二种是小组面试。</div>
+              <strong>面试形式：</strong>
+              <p>面试形式主要分两种，第一种是个人面试；第二种是小组面试。</p>
             </li>
           </ul>
           <h3>管理类联考笔试</h3>
           <ul>
             <li>
-              <div>考试时间：</div>
-              <div>每年12月底</div>
+              <strong>考试时间：</strong>
+              <p>每年12月底</p>
             </li>
             <li>
-              <div>考试内容</div>
-              <div>一.外语-满分100分<br />二.管理类联考综合-满分200分(数学；逻辑；写作)</div>
+              <strong>考试内容：</strong>
+              <p>一.外语—满分100分<br /> 二.管理类联考综合—满分200分 (数学；逻辑；写作)</p>
             </li>
           </ul>
           <h3>复试<span>不同学校有不同的考核要求</span></h3>
           <ul>
             <li>
-              <div>复试时间</div>
-              <div>各院校自主确定面试时间，一般在次年3月</div>
+              <strong>复试时间：</strong>
+              <p>各院校自主确定面试时间，一般在次年的3月。 </p>
             </li>
             <li>
-              <div>复试形式：</div>
-              <div>各学院有不同的安排，一般包括笔试政治理论，英语听力测试，英语面试，综合素质面试。</div>
+              <strong>复试形式：</strong>
+              <p>各学校有不同的安排,一般包括笔试政治理论;英语听力测试;英语面试,综合素质面试。</p>
             </li>
           </ul>
         </div>
