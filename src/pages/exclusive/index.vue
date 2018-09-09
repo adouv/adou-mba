@@ -108,7 +108,7 @@
           <li>
             <image src="http://www.bqeducation.com/public//uploads/20180426/9a37f50d3f2bbf15da2143cf3db1a63c.jpg" />
             <p>秦老师</p>
-            <span>博勤嘉成小城</span>
+            <span>博勤嘉成校长</span>
             <span>香港理工大学</span>
           </li>
           <li>
@@ -249,16 +249,6 @@ export default {
           id: 3,
           url:
             "http://www.bqeducation.com/public/uploads/20180426/fed7f4060f3f2af6d1807263d490171a.jpg"
-        },
-        {
-          id: 4,
-          url:
-            "http://www.bqeducation.com/public/uploads/20180327/68e6300c0e25773beabbcf5db7e5730d.jpg"
-        },
-        {
-          id: 5,
-          url:
-            "http://www.bqeducation.com/public/uploads/20180327/cf684c9c10bda9a51330df3626ea8206.jpg"
         }
       ],
       dataone: [
