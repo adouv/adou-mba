@@ -1,5 +1,4 @@
 .ad-reservation-form {
-
   ul {
     border-radius: 5px;
     width: 95%;
@@ -11,6 +10,7 @@
     li {
       margin: auto 20px;
       display: flex;
+      align-items: center;
       justify-content: flex-start;
       height: 50px;
       line-height: 50px;
@@ -23,11 +23,11 @@
       }
 
       input {
+        width: 70%;
         height: 22px;
         line-height: 22px;
-        margin-top: 14px;
-        padding-left: 10px;
         font-size: 16px;
+        margin: 0 auto;
       }
     }
 
