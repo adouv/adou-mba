@@ -193,7 +193,7 @@
           学员案例<i></i>
         </h2>
         <ul>
-          <li>
+          <li @click="openDetails(id)">
             <image src="http://www.bqeducation.com/public//uploads/20180404/2a58b320436db17b0ff8c591e081b4ab.jpg" mode="aspectFill" />
             <h2><span>张旭</span><i>|</i>政府部门</h2>
             <p>清华大学</p>
@@ -280,6 +280,12 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    openDetails(id) {
+      var url = '../student/main';
+      wx.navigateTo({url})
+    }
   },
   onShareAppMessage(res) {
     return {
