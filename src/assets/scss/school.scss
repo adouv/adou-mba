@@ -1,0 +1,104 @@
+/*学院详情*/
+.hb-school {
+  background: #f3f3f3;
+  .hb-school-box {
+    height: 50vh;
+    width: 100%;
+    background: url("http://www.bqeducation.com/public/static/zp/images/xxkxq_banner.jpg") 100% no-repeat;
+    background-color: rgba(255, 255, 255, .5);
+    .school-info {
+      text-align: center;
+      width: 100%;
+      .school-logo {
+        //width: 30%;
+        //margin:0 auto;
+        image {
+          width: 80px;
+          height: 80px;
+          margin: 10px auto;
+        }
+      }
+    }
+    .school-name {
+      color: $color1;
+      line-height: 20px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      p {
+        line-height: 30px;
+        margin-bottom: 10px;
+        font-family: Arial;
+        font-size: 14px;
+      }
+    }
+    .school-conditions {
+      @extend .flex;
+      text-transform: uppercase;
+      font-size: 14px;
+      div:nth-child(2) {
+        margin: 0 20px;
+        padding: 0 20px;
+        border-left: 2px solid #000;
+        border-right: 2px solid #000;
+
+      }
+      div {
+        p:last-child {
+          color: #ccc;
+        }
+        p:first-child {
+          color: #9ebe4c;
+        }
+      }
+    }
+    .school-notice {
+      font-size: 14px;
+      text-align: left;
+      padding: 20px;
+      color: #ccc;
+      span:first-child {
+        margin-right: 10px;
+        color: #000;
+      }
+      .border-right:after {
+        content: '|';
+        padding: 0 4px;
+      }
+    }
+  }
+  .school-introduce {
+    margin: 10px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    .title {
+      line-height: 2;
+      border-bottom: 1px solid #ccc;
+    }
+    .school-introduce-body {
+      padding-top: 10px;
+      font-size: 12px;
+      em {
+        color: #9ebe4c;
+        margin-bottom: 10px;
+      }
+      div + p {
+        margin-top: 0px;
+      }
+      p {
+        color: #939393;
+        margin-top: 10px;
+        span {
+          color: #000;
+        }
+      }
+    }
+    .school-introduce-body + .school-introduce-body {
+      border-top: 1px solid #ccc;
+      margin-top: 20px;
+    }
+  }
+
+}
