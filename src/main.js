@@ -22,9 +22,10 @@ export default {
     pages: [
       'pages/logs/main',
       'pages/student/main',
-      '^pages/school/main',
+      'pages/school/main',
       'pages/index/main',
-      'pages/exclusive/main',
+      'pages/courseDetails/main',
+      '^pages/exclusive/main',
       'pages/drygoods/main',
       'pages/drygoods/mba/main',
       'pages/drygoods/mem/main',
