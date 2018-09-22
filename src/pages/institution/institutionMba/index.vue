@@ -3,7 +3,7 @@
     <!--院校-->
     <div class="ad-institution-mba">
         <ul>
-        <li>
+        <li @click="openDetails(1)">
           <image src="http://www.bqeducation.com/public/uploads/20180410/8185075adf305d215c3ababfd0ab6e26.png" />
           <div>
             <h2>清华五道口金融学院<span>PBC School of Finance, Tsinghua University</span></h2>
@@ -474,6 +474,10 @@ export default {
     };
   },
   methods: {
+    openDetails(id) {
+      var url = '../school/main';
+      wx.navigateTo({url})
+    },
     switchTab(item) {
       this.tabList.currentTab = item.id;
     }

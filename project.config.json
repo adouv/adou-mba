@@ -9,7 +9,7 @@
 	},
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
-	"appid": "wx67af0b844910042a",
+	"appid": "wxccf6ff1938b0bf36",
 	"projectname": "adou-mba",
 	"condition": {
 		"search": {

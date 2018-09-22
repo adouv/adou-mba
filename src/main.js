@@ -24,6 +24,10 @@ export default {
       'pages/student/main',
       'pages/school/main',
       'pages/index/main',
+<<<<<<< HEAD
+=======
+      'pages/courseDetails/main',
+>>>>>>> eefd38699537fe6c637b8bc017a11bde51db7818
       '^pages/exclusive/main',
       'pages/drygoods/main',
       'pages/drygoods/mba/main',
