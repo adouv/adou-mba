@@ -3,7 +3,7 @@
     <!--预约-->
     <div class="ad-reservation">
       <div class="banner">
-        <image src="http://www.bqeducation.com/public/uploads/20180426/fed7f4060f3f2af6d1807263d490171a.jpg" mode="aspectFill" />
+        <image src="http://www.a-dou.com/mba/image/banne/yuyue.jpg" mode="aspectFill" />
       </div>
       <div class="reservation-tab">
         <ul>

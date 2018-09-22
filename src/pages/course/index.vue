@@ -3,7 +3,7 @@
     <!--课程-->
     <div class="ad-course">
       <div class="banner">
-        <image src="http://www.bqeducation.com/public/uploads/20180426/fed7f4060f3f2af6d1807263d490171a.jpg" mode="aspectFill" />
+        <image src="http://www.a-dou.com/mba/image/banne/kecheng.jpg" mode="aspectFill" />
       </div>
         <!--课程推荐-->
         <div class="global-title ad-course-tuijian">
