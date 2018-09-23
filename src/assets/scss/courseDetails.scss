@@ -1,56 +1,68 @@
 .course-details {
   background: $bodyBackg;
   height: 100vh;
+
+  .banner {
+    height: 200px;
+
+    image {
+      height: 200px;
+    }
+  }
+
   .product {
     padding: 4px 10px;
     font-size: 14px;
     line-height: 0.5rem;
     margin-bottom: 1px;
     background: #fff;
-    .product-name {
 
+    .product-name {
+      font-size: 15px;
+      font-weight: bold;
     }
+
     .present-price {
-      color: $color1;
+      color: #fc5f00;
+      font-size: 18px;
       margin-right: 10px;
     }
+
     .original-price {
-      font-size: 12px;
+      color: #ccc;
+      font-size: 11px;
       text-decoration: line-through;
     }
   }
+
   .product-introduction-box {
     padding-bottom: 50px;
     background: $bodyBackg;
+
     .product-introduction {
       background: #fff;
       font-size: 14px;
       margin-top: 0px;
       padding-bottom: 10px;
       margin-bottom: 5px;
+
       .title {
         font-size: 14px;
       }
+
       .content {
-        padding: 0px 20px;
-        font-size: 13px;
-        .prompt {
-          color: $color1;
-        }
-        ul {
-          li {
-            p:first-child {
-              font-weight: bolder;
-              line-height: 0.5rem;
-            }
-          }
+        padding: 0 20px;
+        .prompt{
+          color: #fc5f00;
         }
       }
     }
   }
+
   .fr {
     float: right;
   }
+
   .footer {
     position: fixed;
     bottom: 0px;
@@ -62,17 +74,21 @@
     padding: 10px 0px;
 
     .present-price {
-      color: $color1;
+      color: #fc5f00;
+      font-size: 18px;
       margin-right: 10px;
       margin-left: 10px;
     }
+
     .original-price {
-      font-size: 12px;
+      color: #ccc;
+      font-size: 11px;
       text-decoration: line-through;
     }
+
     .btn {
       font-size: 12px;
-      background: #CCA353;
+      background: $color3;
       color: #fff;
       border-radius: 5px;
       padding: 5px 10px;

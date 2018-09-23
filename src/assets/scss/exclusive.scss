@@ -2,27 +2,33 @@
 
 .ad-exclusive {
   background: $bodyBackg;
+
   /*超高通过率、协议保过、无理由退费保证*/
   .guarantee {
     background: #fff;
+
     ul {
       @extend .flex;
       flex-wrap: nowrap;
       border-bottom: 5px solid $color1;
+
       li {
         width: 33.3%;
         height: 80px;
         text-align: center;
         position: relative;
+
         p {
           font-size: 23px;
           font-weight: bold;
           color: $color1;
           margin-top: 10px;
         }
+
         span {
           font-size: 15px;
         }
+
         i {
           border-left: 1px solid $color1;
           display: block;
@@ -32,40 +38,48 @@
           top: 10px;
         }
       }
+
       li:nth-child(1) {
         background: url("http://www.bqeducation.com/public/static/zp/images/a.png") no-repeat center center;
         background-size: 70px;
       }
+
       li:nth-child(2) {
         background: url("http://www.bqeducation.com/public/static/zp/images/b.png") no-repeat center center;
         background-size: 58px;
       }
+
       li:nth-child(3) {
         background: url("http://www.bqeducation.com/public/static/zp/images/c.png") no-repeat center center;
         background-size: 60px;
       }
     }
   }
+
   /*MBA双证研究生学历为什么如此受欢迎?*/
   .exclusive-mbaszyjs {
     ul {
       @extend .flex;
       flex-wrap: wrap;
+
       li {
         margin-top: 20px;
         width: 50%;
         text-align: center;
+
         image {
           width: 74px;
           height: 52px;
         }
-        p {
+
+        >p {
           font-weight: bold;
           font-size: 18px;
           height: 35px;
           line-height: 35px;
         }
-        span {
+
+        .v-html-div {
           display: block;
           font-size: 15px;
           color: $color2;
@@ -74,59 +88,69 @@
       }
     }
   }
+
   /*选择博勤嘉成*/
   .exclusive-xzbqjc {
     ul {
       @extend .flex;
       flex-wrap: wrap;
+
       li {
         width: 43%;
         height: 125px;
         border: 3px solid $color1;
         margin-top: 10px;
         padding: 5px;
+
         p {
           font-size: 14px;
           color: $color2;
           font-weight: bold;
         }
+
         i {
           display: block;
           border-top: 3px solid $color1;
           width: 30px;
           margin: 10px 0;
         }
-        span {
+        .v-html-div {
           display: block;
           line-height: 22px;
           font-size: 12px;
         }
       }
+
       /*li奇数设置外面局右侧10像素*/
       li:nth-child(2n+1) {
         margin-right: 10px;
       }
     }
   }
+
   /*导师团队*/
   .exclusive-dstd {
     ul {
       @extend .flex;
       flex-wrap: wrap;
       padding: 10px;
+
       li {
         width: 31.2%;
         height: 250px;
         text-align: center;
+
         image {
           width: 100%;
           height: 170px;
         }
       }
+
       /*每行的第二个li设置左右边距为10像素*/
       li:nth-child(3n+2) {
         margin: 0 10px;
       }
+
       p,
       span {
         display: block;
@@ -136,6 +160,7 @@
         line-height: 23px;
         overflow: hidden;
       }
+
       p {
         color: $color1;
         font-size: 15px;
@@ -143,11 +168,13 @@
       }
     }
   }
+
   /*名校OFFER榜*/
   .exclusive-mxofferb {
     ul {
       @extend .flex;
       flex-wrap: wrap;
+
       li {
         width: 46%;
         height: 200px;
@@ -155,11 +182,13 @@
         background: #eee;
         margin-top: 10px;
         border-radius: 5px;
+
         >image {
           border-radius: 5px;
           width: 100%;
           height: 100px;
         }
+
         .exclusive-school-logo {
           border-radius: 50px;
           width: 50px;
@@ -170,19 +199,23 @@
           transform: translate(-50%, 0);
         }
       }
+
       /*li奇数设置外面局右侧10像素*/
       li:nth-child(2n+1) {
         margin-right: 10px;
       }
+
       h2,
       p {
         text-align: center;
       }
+
       h2 {
         margin-top: 30px;
         font-size: 16px;
         font-weight: bold;
       }
+
       p {
         font-size: 13px;
         font-weight: bold;
@@ -191,12 +224,14 @@
         border-radius: 5px;
         color: #fff;
         margin: 10px auto;
+
         span {
           font-size: 14px;
         }
       }
     }
   }
+
   /*学员案例*/
   .exclusive-xyal {
     ul {
@@ -204,35 +239,42 @@
       flex-wrap: wrap;
       padding: 10px;
       margin-top: 10px;
+
       li {
         width: 31.2%;
         height: 150px;
         text-align: center;
         margin-top: 10px;
+
         image {
           border-radius: 50px;
           width: 80%;
           height: 90px;
         }
       }
+
       /*每行的第二个li设置左右边距为10像素*/
       li:nth-child(3n+2) {
         margin-left: 10px;
         margin-right: 10px;
       }
+
       h2 {
         text-align: center;
         font-size: 16px;
         font-weight: bold;
         @extend .flex;
+
         span {
           color: $color1;
         }
+
         i {
           margin: 0 2px;
           color: #333;
         }
       }
+
       p {
         font-size: 14px;
         margin-top: 5px;

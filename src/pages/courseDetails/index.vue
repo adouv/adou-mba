@@ -1,56 +1,40 @@
 <template>
   <!--课程详情-->
   <div class="course-details">
-    <div class="banner">
-      <image src="http://www.bqeducation.com/public/uploads/20180426/fed7f4060f3f2af6d1807263d490171a.jpg"
-             mode="aspectFill"/>
+    <div class="banner" v-if="detail.Cover!=undefined">
+      <image :src="imageUrlBase+detail.Cover" mode="aspectFill"/>
     </div>
     <div class="product">
-      <p class="product-name">珠宝设计作品集辅导试听课</p>
-      <span class="present-price">¥ 0</span><span class="original-price">价值1800元</span>
+      <p class="product-name">{{detail.Name}}</p>
+      <span class="present-price">¥{{detail.Price}}</span><span class="original-price">价值{{detail.PriceValue}}元</span>
     </div>
     <div class="product-introduction-box">
       <!--课程特点-->
       <div class=" global-title product-introduction">
         <h4 class="title">课程特点<i></i></h4>
         <p class="content">
-          针对个人作品针对个人作品针对个人作品针对个人作品针对个人作品针对个人作品针对个人作品针对个人作品针对个人作品针对个人作品针对个人作品针对个人作品
+          {{detail.Characteristics}}
         </p>
       </div>
       <!--授课时间-->
       <div class=" global-title product-introduction">
         <h4 class="title">授课时间<i></i></h4>
         <p class="content">
-          周一至周日 9.30-18.00 <span class="prompt">(需提前预约)</span>
+          {{detail.CourseTime}} <span class="prompt">(需提前预约)</span>
         </p>
       </div>
       <!--课程内容-->
       <div class=" global-title product-introduction">
         <h4 class="title">课程内容<i></i></h4>
         <p class="content">
-          珠宝设计作品集试听课
-          <span class="fr">1份  价值1800元</span>
+          {{detail.Name}}<span class="fr">1份  价值{{detail.PriceValue}}元</span>
         </p>
       </div>
       <!--课程特点-->
       <div class=" global-title product-introduction">
         <h4 class="title">课程特点<i></i></h4>
         <div class="content">
-          <ul>
-            <li>
-              <p>授课方式</p>
-              <p>1对1免受和远程授课1</p>
-            </li>
-            <li>
-              <p>授课方式</p>
-              <p>1对1免受和远程授课2</p>
-            </li>
-
-            <li>
-              <p>授课方式</p>
-              <p>1对1免受和远程授课</p>
-            </li>
-          </ul>
+          <div v-html="detail.Introduction"></div>
         </div>
       </div>
 
@@ -58,46 +42,57 @@
       <div class=" global-title product-introduction">
         <h4 class="title">预约需知<i></i></h4>
         <div class="content">
-          <ul>
-            <li>
-              <p class="prompt">授课方式</p>
-              <p>·1对1免受和远程授课1</p>
-            </li>
-            <li>
-              <p class="prompt">授课方式</p>
-              <p>·1对1免受和远程授课2</p>
-            </li>
-
-            <li>
-              <p class="prompt">授课方式</p>
-              <p>·1对1免受和远程授课</p>
-            </li>
-          </ul>
+          <div v-html="detail.Notice"></div>
         </div>
       </div>
     </div>
     <div class="footer">
       <span class="present-price">¥ 0</span><span class="original-price">价值1800元</span>
-      <span class="btn">立即支付</span>
+      <span class="btn">
+        <navigator :url="'/pages/orderForm/main?nid='+detail.Id">立即支付</navigator>
+      </span>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    name: "courseDetailsComponent",
-    data() {
-      return {
-        msg: "课程",
-      };
-    },
-    onShareAppMessage(res) {
-      return {
-        title: "B&Q教育",
-        path: "/pages/course/main"
-      };
+import common from "../../common";
+export default {
+  name: "courseDetailsComponent",
+  data() {
+    return {
+      msg: "课程详情",
+      imageUrlBase: this.$imageUrl,
+      detail: {}
+    };
+  },
+  methods: {
+    async getCourseDetail() {
+      let url = "GetCourseDetailById.ashx";
+
+      let urlArgs = common.UtilService.getCurrentPageUrlWithArgs();
+
+      let win = window;
+
+      await this.$http(url, "GET", urlArgs).then(response => {
+        this.detail = response;
+        this.detail.type = urlArgs.type;
+        const key = "courseDetail" + this.detail.Id;
+        wx.setStorageSync(key, "");
+        wx.setStorageSync(key, this.detail);
+      });
     }
-  };
+  },
+  mounted() {
+    this.getCourseDetail();
+  },
+  onShareAppMessage(res) {
+    return {
+      title: "B&Q教育",
+      path: "/pages/course/main"
+    };
+  }
+};
 </script>
 
 <style lang="sass" scoped>

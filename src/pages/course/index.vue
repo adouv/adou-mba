@@ -3,7 +3,7 @@
     <!--课程-->
     <div class="ad-course">
       <div class="banner">
-        <image src="http://www.a-dou.com/mba/image/banne/kecheng.jpg" mode="aspectFill" />
+        <image v-for="(item, index) in bannerList" :index="index" :key="item.Id" :src="imageUrlBase+item.Pic" mode="aspectFill" />
       </div>
         <!--课程推荐-->
         <div class="global-title ad-course-tuijian">
@@ -161,6 +161,8 @@ export default {
   data() {
     return {
       msg: "课程",
+      imageUrlBase: this.$imageUrl,
+      bannerList: [],
       movies: [
         {
           id: 1,
@@ -189,6 +191,29 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    openDetails(id) {
+      var url = "../student/main";
+      wx.navigateTo({ url });
+    },
+    /**
+     * 获取banner
+     */
+    getBannerList() {
+      let url = "GetBannerList.ashx";
+
+      let params = {
+        tid: 2066
+      };
+
+      this.$http(url, "GET", params).then(response => {
+        this.bannerList = response;
+      });
+    }
+  },
+  mounted() {
+    this.getBannerList();
   },
   onShareAppMessage(res) {
     return {

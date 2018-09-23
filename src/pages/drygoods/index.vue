@@ -3,7 +3,7 @@
     <!--干货-->
     <div class="ad-drygoods">
       <div class="banner">
-        <image src="http://www.a-dou.com/mba/image/banne/ganhuo.jpg" mode="aspectFill" />
+        <image v-for="(item, index) in bannerList" :index="index" :key="item.Id" :src="imageUrlBase+item.Pic" mode="aspectFill" />
       </div>
       <div class="drygoods-tab">
         <ul>
@@ -30,10 +30,12 @@ export default {
   data() {
     return {
       msg: "干货",
+      imageUrlBase: this.$imageUrl,
       tabList: {
         currentTab: 0,
         item: [{ id: 0, text: "MBA" }, { id: 1, text: "MEM" }]
       },
+      bannerList: [],
       movies: [
         {
           id: 1,
@@ -67,6 +69,29 @@ export default {
     switchTab(item) {
       this.tabList.currentTab = item.id;
     }
+  },
+  methods: {
+    openDetails(id) {
+      var url = "../student/main";
+      wx.navigateTo({ url });
+    },
+    /**
+     * 获取banner
+     */
+    getBannerList() {
+      let url = "GetBannerList.ashx";
+
+      let params = {
+        tid: 2063
+      };
+
+      this.$http(url, "GET", params).then(response => {
+        this.bannerList = response;
+      });
+    }
+  },
+  mounted() {
+    this.getBannerList();
   },
   onShareAppMessage(res) {
     return {

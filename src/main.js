@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App'
 import store from './store'
 import router from './router'
+import common from './common/index'
 
 import 'font-awesome/scss/font-awesome.scss'
 import 'iconfontone/iconfont.css';
@@ -11,7 +12,8 @@ Vue.config.productionTip = false
 App.mpType = 'app'
 
 Vue.prototype.$store = store
-
+Vue.http = Vue.prototype.$http = common.WxRequestService.wxHttpRequest;
+Vue.imageUrl = Vue.prototype.$imageUrl = 'http://localhost:54546/';
 const app = new Vue(App)
 app.$mount()
 
@@ -24,10 +26,8 @@ export default {
       'pages/student/main',
       'pages/school/main',
       'pages/index/main',
-<<<<<<< HEAD
-=======
       'pages/courseDetails/main',
->>>>>>> eefd38699537fe6c637b8bc017a11bde51db7818
+      'pages/orderForm/main',
       '^pages/exclusive/main',
       'pages/drygoods/main',
       'pages/drygoods/mba/main',

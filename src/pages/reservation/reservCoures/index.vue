@@ -2,62 +2,16 @@
     <!--课程-->
     <div class="ad-reserv-course">
        <ul>
-         <li @click="openDetails(1)">
-           <image src="http://www.a-dou.com/mba/image/yuyue_kecheng1.png" mode="aspectFit" />
-           <h2>1V1针对性评估30min</h2>
+         <li v-for="(item, index) in courseList" :index="index" :key="item.Id" :src="imageUrlBase+item.Pic">
+           <image :src="imageUrlBase+item.Cover" mode="aspectFit" />
+           <h2>{{item.Name}}</h2>
            <div>
-             <div>0元<span>价值32850元</span></div>
-             <div>立即预约</div>
+             <div>{{item.Price}}元<span>价值{{item.PriceValue}}元</span></div>
+             <div>
+               <navigator :url="'/pages/courseDetails/main?nid='+item.Id+'&type=0'">立即预约</navigator>
+             </div>
            </div>
          </li>
-         <li>
-           <image src="http://www.a-dou.com/mba/image/yuyue_kecheng2.png" mode="aspectFit" />
-           <h2>1V1针对性评估30min</h2>
-           <div>
-             <div>0元<span>价值32850元</span></div>
-             <div>立即预约</div>
-           </div>
-         </li>
-         <li>
-           <image src="http://www.a-dou.com/mba/image/yuyue_kecheng3.png" mode="aspectFit" />
-            <h2>1V1针对性评估30min</h2>
-            <div>
-              <div>0元<span>价值32850元</span></div>
-              <div>立即预约</div>
-            </div>
-         </li>
-         <li>
-           <image src="http://www.a-dou.com/mba/image/yuyue_kecheng4.png" mode="aspectFit" />
-            <h2>1V1针对性评估30min</h2>
-            <div>
-              <div>0元<span>价值32850元</span></div>
-              <div>立即预约</div>
-            </div>
-         </li>
-         <li>
-           <image src="http://www.a-dou.com/mba/image/yuyue_kecheng5.png" mode="aspectFit" />
-            <h2>1V1针对性评估30min</h2>
-            <div>
-              <div>0元<span>价值32850元</span></div>
-              <div>立即预约</div>
-            </div>
-         </li>
-         <li>
-           <image src="http://www.a-dou.com/mba/image/yuyue_kecheng6.png" mode="aspectFit" />
-            <h2>1V1针对性评估30min</h2>
-            <div>
-              <div>0元<span>价值32850元</span></div>
-              <div>立即预约</div>
-            </div>
-         </li>
-         <li>
-          <image src="http://www.a-dou.com/mba/image/yuyue_kecheng7.png" mode="aspectFit" />
-            <h2>1V1针对性评估30min</h2>
-            <div>
-              <div>0元<span>价值32850元</span></div>
-              <div>立即预约</div>
-            </div>
-        </li>
        </ul>
        <div class="btn-more">点击加载更多</div>
     </div>
@@ -69,14 +23,21 @@ export default {
   props: ["tabItem"],
   data() {
     return {
-      msg: ""
+      msg: "课程",
+      imageUrlBase: this.$imageUrl,
+      courseList: []
     };
   },
   methods: {
-    openDetails(id) {
-      var url = '../courseDetails/main';
-      wx.navigateTo({url})
+    async getCourseList() {
+      let url = "GetCourseListByCid.ashx";
+      await this.$http(url, "GET", { cid: 2074 }).then(response => {
+        this.courseList = response;
+      });
     }
+  },
+  mounted() {
+    this.getCourseList();
   }
 };
 </script>

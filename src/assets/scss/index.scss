@@ -8,6 +8,7 @@ $refer-width: 1366px;
 $device-width: 1025px,
 1366px;
 $font-sizes: (14px, 16px, 18px, 20px);
+
 // 根据rem为各个元素计算大小
 @function computer($px) {
   @return $px / $html-font-size * 1rem;
@@ -27,15 +28,18 @@ $font-sizes: (14px, 16px, 18px, 20px);
 /*院校*/
 
 @import './institution.scss';
-/*课程*/
 
+/*课程*/
 @import './course.scss';
 
+/*学生详情*/
 @import './student.scss';
+
 /*学员详情*/
-
 @import './school.scss';
-/*学院详情*/
 
+/*学院详情*/
 @import "./courseDetails.scss";
-/*课程详情*/
+
+/*订单提交*/
+@import "./orderForm.scss";
