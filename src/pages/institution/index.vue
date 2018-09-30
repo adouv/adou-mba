@@ -71,9 +71,7 @@ export default {
   methods: {
     switchTab(item) {
       this.tabList.currentTab = item.id;
-    }
-  },
-  methods: {
+    },
     openDetails(id) {
       var url = "../student/main";
       wx.navigateTo({ url });

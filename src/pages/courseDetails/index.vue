@@ -72,8 +72,6 @@ export default {
 
       let urlArgs = common.UtilService.getCurrentPageUrlWithArgs();
 
-      let win = window;
-
       await this.$http(url, "GET", urlArgs).then(response => {
         this.detail = response;
         this.detail.type = urlArgs.type;

@@ -5,7 +5,7 @@
           <block v-for="(item, index) in bannerList" :index="index" :key="item.Id">
               <swiper-item>
                 <a :href="item.Url">
-                  <image :src="'http://localhost:54546/'+item.Pic" class="slide-image" mode="aspectFill" />
+                  <image :src="imageUrlBase+item.Pic" class="slide-image" mode="aspectFill" />
                 </a>
               </swiper-item>
           </block>
@@ -126,7 +126,7 @@ export default {
   },
   methods: {
     openDetails(id) {
-      var url = "../student/main";
+      var url = "../student/main?nid=" + id;
       wx.navigateTo({ url });
     },
     /**
@@ -139,30 +139,30 @@ export default {
         tid: 1
       };
 
-      this.$http(url, 'GET', params).then(response => {
+      this.$http(url, "GET", params).then(response => {
         this.bannerList = response;
       });
     },
     async getArticleList() {
       let url = "GetArticleListByCid.ashx";
       //MBA双证研究生学历为什么如此受欢迎
-      await this.$http(url, 'GET', { cid: 2067 }).then(response => {
+      await this.$http(url, "GET", { cid: 2067 }).then(response => {
         this.mbaDoubelCertificateList = response;
       });
       //选择博勤嘉成
-      await this.$http(url, 'GET', { cid: 2070 }).then(response => {
+      await this.$http(url, "GET", { cid: 2070 }).then(response => {
         this.boQinList = response;
       });
       //导师团队
-      await this.$http(url, 'GET', { cid: 2082 }).then(response => {
+      await this.$http(url, "GET", { cid: 2082 }).then(response => {
         this.MentorTeamList = response;
       });
       //名校OFFER榜
-      await this.$http(url, 'GET', { cid: 2068 }).then(response => {
+      await this.$http(url, "GET", { cid: 2068 }).then(response => {
         this.FamousSchoolOfferList = response;
       });
       //学员案例
-      await this.$http(url, 'GET', { cid: 2069 }).then(response => {
+      await this.$http(url, "GET", { cid: 2069 }).then(response => {
         this.StudentList = response;
       });
     }

@@ -3,164 +3,125 @@
     <!--背景图片-->
     <div class="hb-school-box">
       <div class="school-info">
-        <div class="school-logo">
-          <image src="http://www.bqeducation.com/public/uploads/20180410/8185075adf305d215c3ababfd0ab6e26.png"
-                 mode="aspectFill"/>
+        <div class="school-logo" v-if="detail.Logo!=undefined">
+          <image :src="imageUrlBase+detail.Logo" mode="aspectFill"/>
         </div>
         <!--学校名字-->
         <div class="school-name">
           <h2>{{schoolName}}</h2>
           <p>PBC School of Finance, Tsinghua University</p>
         </div>
-        <!--学校数据-->
-        <div class="school-conditions">
-          <div>
-            <p>建议有</p>
-            <p>abc</p>
-          </div>
-          <div>
-            <p>7.0</p>
-            <p>雅思</p>
-          </div>
-          <div>
-            <p>92</p>
-            <p>托福</p>
-          </div>
-        </div>
         <!--学校通知-->
         <div class="school-notice">
-          <p><span>截申日期</span><span>早申：11月1日 常规：1月15日</span></p>
-          <p><span>学费预算</span><span>约$42,900~$47,100</span></p>
-          <p><span>专业优势</span><span class="border-right">服装设计</span><span
-            class="border-right">服装设计</span><span class="border-right">服装设计</span><span>服装设计</span></p>
+          <p><span>地区</span><span>{{detail.Area}}</span></p>
+          <p><span>性质</span><span>{{detail.Nature}}</span></p>
+          <p><span>创办时间</span><span>{{detail.Time}}</span></p>
+          <p><span>地址</span><span>{{detail.Address}}</span></p>
+          <p><span>分数线类别</span><span>{{detail.ScoreLineType}}</span></p>
+          <p><span>官网</span><span>{{detail.Url}}</span></p>
         </div>
+      </div>
+    </div>
+    <!--招生信息-->
+    <div class="school-student-info">
+      <p><span>项目类别</span><span>{{detail.Type}}</span></p>
+    </div>
+
+    <div class="school-student-info">
+      <p><span>学制</span><span>{{detail.SchoolSystem}}</span></p>
+    </div>
+
+    <div class="school-student-info">
+      <p><span>是否接受调剂</span><span>{{detail.IsAdjust}}</span></p>
+    </div>
+
+    <div class="school-student-info">
+      <p><span>是否开设提前面试</span><span>{{detail.IsEarlyInterview}}</span></p>
+    </div>
+
+    <div class="school-student-info">
+      <p><span>招生人数</span><span>{{detail.Number}}</span></p>
+    </div>
+
+    <div class="school-introduce">
+      <div class="title">
+        学费
+      </div>
+      <div class="school-introduce-body school-content">
+        {{detail.Tuition}}{{detail.TuitionDescript}}
+      </div>
+    </div>
+
+    <div class="school-introduce">
+      <div class="title">
+        奖学金
+      </div>
+      <div class="school-introduce-body school-content">
+        {{detail.Scholarship}}
+      </div>
+    </div>
+
+    <div class="school-introduce">
+      <div class="title">
+        历年分数线
+      </div>
+      <div class="school-introduce-body school-content">
+        {{detail.ScoreLine}}
       </div>
     </div>
     <!--介绍-->
     <div class="school-introduce">
       <div class="title">
-        学院详情
+        招生项目
       </div>
       <div class="school-introduce-body">
-        <p>
-          <span>xxx学院</span>学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <p>
-          <span>xxx学院</span>学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
+        <div v-html="detail.Project"></div>
       </div>
     </div>
     <div class="school-introduce">
       <div class="title">
-        学院专业
+        项目特色
       </div>
       <div class="school-introduce-body">
-        <em>本科生</em>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-      </div>
-      <div class="school-introduce-body">
-        <em>研究生</em>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-      </div>
-    </div>
-    <div class="school-introduce">
-      <div class="title">
-        作品集要求
-      </div>
-      <div class="school-introduce-body">
-        <em>本科生</em>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-      </div>
-      <div class="school-introduce-body">
-        <em>研究生</em>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
-        <div>服装设计</div>
-        <p>
-          学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍学院介绍
-        </p>
+        <div v-html="detail.Project"></div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    name: " schoolComponent",
-    data() {
-      return {
-        msg: "学院详情",
-        schoolName: '清华大学'
-      };
-    },
-    onShareAppMessage(res) {
-      return {
-        title: "B&Q教育",
-        path: "/pages/exclusive/main"
-      };
+import common from "../../common";
+export default {
+  name: " schoolComponent",
+  data() {
+    return {
+      msg: "学院详情",
+      imageUrlBase: this.$imageUrl,
+      schoolName: "清华大学",
+      detail: {}
+    };
+  },
+  methods: {
+    async getSchoolDetail() {
+      let url = "GetSchoolDetailById.ashx";
+
+      let urlArgs = common.UtilService.getCurrentPageUrlWithArgs();
+
+      await this.$http(url, "GET", urlArgs).then(response => {
+        this.detail = response;
+      });
     }
-  };
+  },
+  mounted() {
+    this.getSchoolDetail();
+  },
+  onShareAppMessage(res) {
+    return {
+      title: "B&Q教育",
+      path: "/pages/exclusive/main"
+    };
+  }
+};
 </script>
 
 <style lang="scss" scoped>

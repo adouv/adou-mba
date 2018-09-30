@@ -5,7 +5,7 @@ import Vue from 'vue'
 export default {
   wxHttpRequest(url, method, params = {}) {
 
-    let baseUrl = "http://localhost:54546/ashx/";
+    let baseUrl = "http://a-dou.com/ashx/";
 
     return new Promise((resolve, reject) => {
       let options = {

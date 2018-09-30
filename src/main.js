@@ -13,7 +13,7 @@ App.mpType = 'app'
 
 Vue.prototype.$store = store
 Vue.http = Vue.prototype.$http = common.WxRequestService.wxHttpRequest;
-Vue.imageUrl = Vue.prototype.$imageUrl = 'http://localhost:54546/';
+Vue.imageUrl = Vue.prototype.$imageUrl = 'http://a-dou.com';
 const app = new Vue(App)
 app.$mount()
 

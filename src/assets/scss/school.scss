@@ -1,15 +1,22 @@
 /*学院详情*/
 .hb-school {
   background: #f3f3f3;
+
   .hb-school-box {
     height: 50vh;
     width: 100%;
-    background: url("http://www.bqeducation.com/public/static/zp/images/xxkxq_banner.jpg") 100% no-repeat;
+    background-image: url("http://www.bqeducation.com/public/static/zp/images/xxkxq_banner.jpg");
     background-color: rgba(255, 255, 255, .5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
     .school-info {
       text-align: center;
       width: 100%;
+
       .school-logo {
+
         //width: 30%;
         //margin:0 auto;
         image {
@@ -19,6 +26,7 @@
         }
       }
     }
+
     .school-name {
       color: $color1;
       line-height: 20px;
@@ -26,6 +34,7 @@
       font-size: 20px;
       font-weight: bold;
       text-transform: uppercase;
+
       p {
         line-height: 30px;
         margin-bottom: 10px;
@@ -33,10 +42,12 @@
         font-size: 14px;
       }
     }
+
     .school-conditions {
       @extend .flex;
       text-transform: uppercase;
       font-size: 14px;
+
       div:nth-child(2) {
         margin: 0 20px;
         padding: 0 20px;
@@ -44,58 +55,96 @@
         border-right: 2px solid #000;
 
       }
+
       div {
         p:last-child {
           color: #ccc;
         }
+
         p:first-child {
           color: #9ebe4c;
         }
       }
     }
+
     .school-notice {
-      font-size: 14px;
+      font-size: 15px;
       text-align: left;
-      padding: 20px;
-      color: #ccc;
-      span:first-child {
-        margin-right: 10px;
-        color: #000;
-      }
-      .border-right:after {
-        content: '|';
-        padding: 0 4px;
+      padding: 0 25px;
+      color: #fff;
+
+      p {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        line-height: 20px;
+
+        span:first-child {
+          width: 25%;
+          padding-right: 10px;
+          text-align: right;
+        }
+
+        span:last-child {
+          width: 85%;
+        }
       }
     }
   }
+
+  .school-student-info {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background: #fff;
+    p{
+      font-size: 18px !important;
+      span:first-child{
+        padding-right: 10px;
+      }
+      span:last-child{
+        font-size: 17px;
+      }
+    }
+  }
+
   .school-introduce {
     margin: 10px;
     background: #fff;
     border-radius: 5px;
     padding: 10px;
+
     .title {
       line-height: 2;
       border-bottom: 1px solid #ccc;
+      font-size: 18px;
+    }
+    .school-content{
+      font-size: 14px;
     }
     .school-introduce-body {
       padding-top: 10px;
-      font-size: 12px;
+
       em {
         color: #9ebe4c;
         margin-bottom: 10px;
       }
-      div + p {
+
+      div+p {
         margin-top: 0px;
       }
+
       p {
         color: #939393;
         margin-top: 10px;
+
         span {
           color: #000;
         }
       }
     }
-    .school-introduce-body + .school-introduce-body {
+
+    .school-introduce-body+.school-introduce-body {
       border-top: 1px solid #ccc;
       margin-top: 20px;
     }

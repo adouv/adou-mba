@@ -85,37 +85,9 @@
             8项增值服务<i></i>
           </h2>
           <ul>
-            <li>
-              <h2><i  class="fa fa-heart"></i>博勤嘉成CLUB</h2>
-              <p>会员体系内专享资源与经验共享平台</p>
-            </li>
-            <li>
-              <h2><i  class="fa fa-heart"></i>商学院公开课</h2>
-              <p>为学生提供长期线上线下的学习平台</p>
-            </li>
-            <li>
-              <h2><i  class="fa fa-heart"></i>活动邀请</h2>
-              <p>为学生提供多宗多样的文化活动邀请</p>
-            </li>
-            <li>
-              <h2><i  class="fa fa-heart"></i>线上课程</h2>
-              <p>随时随地灵活学习各类课程，免费无限次观看</p>
-            </li>
-            <li>
-              <h2><i  class="fa fa-heart"></i>人才平台</h2>
-              <p>人才资源共享平台 为你提供更好的职业机会</p>
-            </li>
-            <li>
-              <h2><i  class="fa fa-heart"></i>学习中心</h2>
-              <p>为学生提供优质舒适的学习环境</p>
-            </li>
-            <li>
-              <h2><i  class="fa fa-heart"></i>面试公开课</h2>
-              <p>MBA面试官亲授 如何在面试中抓住考官的心 如何在面试中顶住压力 解决各种刁难问题</p>
-            </li>
-            <li>
-              <h2><i  class="fa fa-heart"></i>讲座</h2>
-              <p>特邀各领域专业人士 分享第一手行业资讯及趋势分析</p>
+            <li v-for="(item, index) in valueAddedServiceList" :index="index" :key="item.Id">
+              <h2><i class="fa fa-heart"></i>{{item.Title}}</h2>
+              <p>{{item.Summary}}</p>
             </li>
           </ul>
         </div>
@@ -125,30 +97,9 @@
             独家配套教材<i></i>
           </h2>
           <ul>
-            <li>
-              <image src="http://www.a-dou.com/mba/image/mbatiqianmianshifaze.png"  />
-              <h2>MBA提前面试</h2>
-            </li>
-            <li>
-              <image src="http://www.a-dou.com/mba/image/memtiqianmianshifaze.png" />
-              <h2>MBA提前面试</h2>
-            </li>
-            <li>
-              <image src="http://www.a-dou.com/mba/image/mbaqinghuabeidarenda.png" />
-              <h2>MBA提前面试</h2>
-            </li>
-
-            <li>
-              <image src="http://www.a-dou.com/mba/image/hexincihuibibeishouce.png" />
-              <h2>MBA提前面试</h2>
-            </li>
-            <li>
-              <image src="http://www.a-dou.com/mba/image/luojimanfenbaipishu.png" />
-              <h2>MBA提前面试</h2>
-            </li>
-            <li>
-              <image src="http://www.a-dou.com/mba/image/shuxuemanfenbaipishu.jpg" />
-              <h2>数学满分白皮书</h2>
+            <li v-for="(item, index) in supportingMaterialsList" :index="index" :key="item.Id">
+              <image :src="imageUrlBase+item.BPic"  />
+              <h2>{{item.Title}}</h2>
             </li>
           </ul>
         </div>
@@ -163,33 +114,8 @@ export default {
       msg: "课程",
       imageUrlBase: this.$imageUrl,
       bannerList: [],
-      movies: [
-        {
-          id: 1,
-          url:
-            "http://www.bqeducation.com/public/uploads/20180330/7f4d7b2d06bd73d49a05e59bb119b738.jpg"
-        },
-        {
-          id: 2,
-          url:
-            "http://www.bqeducation.com/public/uploads/20180327/24c9cfb6bb4c0e1260370ca2c7ae3ce3.jpg"
-        },
-        {
-          id: 3,
-          url:
-            "http://www.bqeducation.com/public/uploads/20180426/fed7f4060f3f2af6d1807263d490171a.jpg"
-        },
-        {
-          id: 4,
-          url:
-            "http://www.bqeducation.com/public/uploads/20180327/68e6300c0e25773beabbcf5db7e5730d.jpg"
-        },
-        {
-          id: 5,
-          url:
-            "http://www.bqeducation.com/public/uploads/20180327/cf684c9c10bda9a51330df3626ea8206.jpg"
-        }
-      ]
+      valueAddedServiceList: [],
+      supportingMaterialsList: []
     };
   },
   methods: {
@@ -203,17 +129,29 @@ export default {
     getBannerList() {
       let url = "GetBannerList.ashx";
 
-      let params = {
+      let args = {
         tid: 2066
       };
 
-      this.$http(url, "GET", params).then(response => {
+      this.$http(url, "GET", args).then(response => {
         this.bannerList = response;
+      });
+    },
+    async getArticleList() {
+      let url = "GetArticleListByCid.ashx";
+
+      await this.$http(url, "GET", { cid: 2080 }).then(response => {
+        this.valueAddedServiceList = response;
+      });
+
+      await this.$http(url, "GET", { cid: 2081 }).then(response => {
+        this.supportingMaterialsList = response;
       });
     }
   },
   mounted() {
     this.getBannerList();
+    this.getArticleList();
   },
   onShareAppMessage(res) {
     return {
