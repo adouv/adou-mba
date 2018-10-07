@@ -2,7 +2,8 @@
   <div class="hb-school">
     <!--背景图片-->
     <div class="hb-school-box">
-      <div class="school-info">
+      <image class="bg" src="https://www.a-dou.com//wwwroot/images/xxkxq_banner.jpg" mode="aspectFill"/>
+            <div class="school-info">
         <div class="school-logo" v-if="detail.Logo!=undefined">
           <image :src="imageUrlBase+detail.Logo" mode="aspectFill"/>
         </div>
