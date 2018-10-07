@@ -13,7 +13,7 @@
            </div>
          </li>
        </ul>
-       <div class="btn-more">点击加载更多</div>
+       <div class="btn-more"  @click="getCourseList(1)" v-if="flag">点击加载更多</div>
     </div>
 </template>
 
@@ -25,14 +25,34 @@ export default {
     return {
       msg: "课程",
       imageUrlBase: this.$imageUrl,
-      courseList: []
+      courseList: [],
+      pageIndex: 1,
+      pageSize: 10,
+      flag: true
     };
   },
   methods: {
-    async getCourseList() {
+    async getCourseList(pageIndex) {
       let url = "GetCourseListByCid.ashx";
-      await this.$http(url, "GET", { cid: 2074 }).then(response => {
-        this.courseList = response;
+
+      if (pageIndex != undefined) {
+        this.pageIndex = this.pageIndex + 1;
+      }
+
+      let args = {
+        cid: 2074,
+        pageIndex: this.pageIndex,
+        pageSize: this.pageSize
+      };
+
+      await this.$http(url, "GET", args).then(response => {
+        let list = JSON.parse(response.list);
+        if (pageIndex != undefined) {
+          this.courseList = this.courseList.concat(list);
+        } else {
+          this.courseList = list;
+        }
+        this.flag = list.length > 0 ? true : false;
       });
     }
   },

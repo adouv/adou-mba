@@ -9,35 +9,41 @@
       <span class="present-price">¥{{detail.Price}}</span><span class="original-price">价值{{detail.PriceValue}}元</span>
     </div>
     <div class="product-introduction-box">
-      <!--课程特点-->
+      <!--活动特点-->
       <div class=" global-title product-introduction">
-        <h4 class="title">课程特点<i></i></h4>
-        <p class="content">
-          {{detail.Characteristics}}
-        </p>
-      </div>
-      <!--授课时间-->
-      <div class=" global-title product-introduction">
-        <h4 class="title">授课时间<i></i></h4>
-        <p class="content">
-          {{detail.CourseTime}} <span class="prompt">(需提前预约)</span>
-        </p>
-      </div>
-      <!--课程内容-->
-      <div class=" global-title product-introduction">
-        <h4 class="title">课程内容<i></i></h4>
-        <p class="content">
-          {{detail.Name}}<span class="fr">1份  价值{{detail.PriceValue}}元</span>
-        </p>
-      </div>
-      <!--课程特点-->
-      <div class=" global-title product-introduction">
-        <h4 class="title">课程特点<i></i></h4>
+        <h4 class="title">活动特点<i></i></h4>
         <div class="content">
-          <div v-html="detail.Introduction"></div>
+          <div v-html="detail.Characteristics"></div>
         </div>
       </div>
-
+      <!--活动时间-->
+      <div class=" global-title product-introduction">
+        <h4 class="title">活动时间<i></i></h4>
+        <p class="content">
+          {{detail.Time}} <span class="prompt">(需提前预约)</span>
+        </p>
+      </div>
+      <!--活动地点-->
+      <div class=" global-title product-introduction">
+        <h4 class="title">活动地点<i></i></h4>
+        <div class="content">
+          <div v-html="detail.Address"></div>
+        </div>
+      </div>
+      <!--活动嘉宾-->
+      <div class=" global-title product-introduction">
+        <h4 class="title">活动嘉宾<i></i></h4>
+        <div class="content">
+          <div v-html="detail.Guest"></div>
+        </div>
+      </div>
+      <!--活动特点-->
+      <div class=" global-title product-introduction">
+        <h4 class="title">活动内容<i></i></h4>
+        <div class="content">
+          <div v-html="detail.Contents"></div>
+        </div>
+      </div>
       <!--预约需知-->
       <div class=" global-title product-introduction">
         <h4 class="title">预约需知<i></i></h4>
@@ -58,7 +64,7 @@
 <script>
 import common from "../../common";
 export default {
-  name: "courseDetailsComponent",
+  name: "activityDetailsComponent",
   data() {
     return {
       msg: "课程详情",
@@ -68,7 +74,7 @@ export default {
   },
   methods: {
     async getCourseDetail() {
-      let url = "GetCourseDetailById.ashx";
+      let url = "GetActivityDetailById.ashx";
 
       let urlArgs = common.UtilService.getCurrentPageUrlWithArgs();
 
@@ -87,7 +93,7 @@ export default {
   onShareAppMessage(res) {
     return {
       title: "B&Q教育",
-      path: "/pages/courseDetails/main"
+      path: "/pages/activityDetails/main"
     };
   }
 };

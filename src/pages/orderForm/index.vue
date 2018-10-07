@@ -25,7 +25,7 @@
             </div>
 
             <div class="order-form-info">
-                <h2>请填写一下信息</h2>
+                <h2>请填写以下信息</h2>
                 <ul>
                     <li>
                         <label>姓名</label>

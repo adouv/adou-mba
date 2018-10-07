@@ -6,6 +6,7 @@
 
 .banner {
   height: 120px;
+
   image {
     height: 120px;
   }
@@ -49,4 +50,11 @@
   padding: 5px 10px;
   font-size: 18px;
   margin: 0 auto;
+}
+
+
+.null {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
 }
