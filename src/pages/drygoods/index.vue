@@ -35,42 +35,13 @@ export default {
         currentTab: 0,
         item: [{ id: 0, text: "MBA" }, { id: 1, text: "MEM" }]
       },
-      bannerList: [],
-      movies: [
-        {
-          id: 1,
-          url:
-            "http://www.bqeducation.com/public/uploads/20180330/7f4d7b2d06bd73d49a05e59bb119b738.jpg"
-        },
-        {
-          id: 2,
-          url:
-            "http://www.bqeducation.com/public/uploads/20180327/24c9cfb6bb4c0e1260370ca2c7ae3ce3.jpg"
-        },
-        {
-          id: 3,
-          url:
-            "http://www.bqeducation.com/public/uploads/20180426/fed7f4060f3f2af6d1807263d490171a.jpg"
-        },
-        {
-          id: 4,
-          url:
-            "http://www.bqeducation.com/public/uploads/20180327/68e6300c0e25773beabbcf5db7e5730d.jpg"
-        },
-        {
-          id: 5,
-          url:
-            "http://www.bqeducation.com/public/uploads/20180327/cf684c9c10bda9a51330df3626ea8206.jpg"
-        }
-      ]
+      bannerList: []
     };
   },
   methods: {
     switchTab(item) {
       this.tabList.currentTab = item.id;
-    }
-  },
-  methods: {
+    },
     openDetails(id) {
       var url = "../student/main";
       wx.navigateTo({ url });

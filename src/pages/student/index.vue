@@ -3,7 +3,7 @@
     <!--背景图片-->
     <div class="title-bg">
       <div class="title-bg-img">
-        <image src="http://www.bqeducation.com/public/static/zp/images/xyal_jtbanner.png" mode="aspectFill"/>
+        <image src="https://www.a-dou.com/wwwroot/images/xyal_jtbanner.png" mode="aspectFill"/>
       </div>
     </div>
     <!--头像名字-->

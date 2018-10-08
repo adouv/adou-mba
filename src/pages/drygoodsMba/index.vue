@@ -10,7 +10,7 @@
           <p>
             一种专业硕士学位，是商界普遍认为晋升管理阶层的有效途径。MBA是培养能够胜任工商企业和经济管理部门高层管理工作需要的务实型、复合型和应用型高层次管理人才。
           </p>
-          <image src="http://www.bqeducation.com/public/static/zp/images/sj.png" mode="aspectFit" />
+          <image src="https://www.a-dou.com/wwwroot/images/sj.png" mode="aspectFit" />
         </div>
       </div>
       <!--为什么要报MBA-->
@@ -68,25 +68,25 @@
         </h2>
         <ul>
           <li>
-            <image src="http://www.a-dou.com/mba/image/mem_bkbj.png" />
+            <image src="https://www.a-dou.com/wwwroot/images/mem_bkbj.png" />
             <h3>专科学历</h3>
             <p>毕业之日起至2019年9月</p>
             <p>满足五年工作年限</p>
           </li>
           <li>
-            <image src="http://www.a-dou.com/mba/image/mem_bkbj.png" />
+            <image src="https://www.a-dou.com/wwwroot/images/mem_bkbj.png" />
             <h3>专科学历</h3>
             <p>毕业之日起至2019年9月</p>
             <p>满足五年工作年限</p>
           </li>
           <li>
-            <image src="http://www.a-dou.com/mba/image/mem_bkbj.png" />
+            <image src="https://www.a-dou.com/wwwroot/images/mem_bkbj.png" />
             <h3>专科学历</h3>
             <p>毕业之日起至2019年9月</p>
             <p>满足五年工作年限</p>
           </li>
           <li>
-            <image src="http://www.a-dou.com/mba/image/mem_bkbj.png" />
+            <image src="https://www.a-dou.com/wwwroot/images/mem_bkbj.png" />
             <h3>专科学历</h3>
             <p>毕业之日起至2019年9月</p>
             <p>满足五年工作年限</p>
@@ -99,7 +99,7 @@
           备考流程-提前面试<i></i>
         </h2>
         <div class="content">
-          <image src="http://www.bqeducation.com/public/static/zp/images/tqms_lc.png" mode="aspectFit" />
+          <image src="https://www.a-dou.com/wwwroot/images/tqms_lc.png" mode="aspectFit" />
         </div>
       </div>
       <!--备课流程-笔试环节-->
@@ -107,7 +107,7 @@
         <h2 class="title">
           备课流程-笔试环节<i></i>
         </h2>
-        <image src="http://www.a-dou.com/mba/image/bklc.png" mode="aspectFit" />
+        <image src="https://www.a-dou.com/wwwroot/images/bklc.png" mode="aspectFit" />
       </div>
       <!--MBA考试形式-->
       <div class="global-title drygoods-mba-mbaksxs">
@@ -115,7 +115,7 @@
           MBA考试形式<i></i>
         </h2>
         <div class="content">
-          <image src="http://www.bqeducation.com/public/static/mobi/images/mba.png" mode="aspectFit" />
+          <image src="https://www.a-dou.com/wwwroot/images/mba.png" mode="aspectFit" />
           <h3>提前面试<span>部分院校项目开设提前面试</span></h3>
           <ul>
             <li>

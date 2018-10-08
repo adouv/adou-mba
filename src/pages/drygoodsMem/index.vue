@@ -49,17 +49,17 @@
         </h2>
         <ul>
           <li>
-            <image src="http://www.a-dou.com/mba/image/mem1.png" mode="aspectFit" />
+            <image src="https://www.a-dou.com/wwwroot/images/mem1.png" mode="aspectFit" />
             <h2>对比MBA，MEM更“专”</h2>
             <p>MEM的培养更注重于技术专长、社会经验、项目管理和设计开发等，同时适度补充财务和市场方面的知识，以及增长国际交流经验。MEM为广大工程技术骨干人员未来成长为工程项目管理者，提供了一条性价比更高的发展路径。</p>
           </li>
           <li>
-             <image src="http://www.a-dou.com/mba/image/mem2.png" mode="aspectFit" />
+             <image src="https://www.a-dou.com/wwwroot/images/mem2.png" mode="aspectFit" />
              <h2>MEM适应现代工程事业的发展趋势</h2>
             <p>随着现代工程出现了规模巨大、决策流程复杂、涉及技术种类众多、组织结构庞大、历时漫长、参与人员众多等趋势,工程管理在现代工程中重要性使得工程管理人员在现代工程实践中扮演着越来越重要的角色。</p>
           </li>
           <li>
-             <image src="http://www.a-dou.com/mba/image/mem3.png" mode="aspectFit" />
+             <image src="https://www.a-dou.com/wwwroot/images/mem3.png" mode="aspectFit" />
              <h2>MEM不只为成为出色工程项目管理者</h2>
             <p>大多数全球500强企业的CEO们,普遍都有过工程学的教育背景。在全美的大型企业中,22%的CEO有和工程相关学位,远远高于其他学科所占的百分比,全美工程师协会调查显示,50%以上的工程技术人员,在工作后的10年内,通常在没有接受过管理方面的专业培训情况下,会更多的担任工程管理的角色。</p>
           </li>
@@ -72,25 +72,25 @@
         </h2>
         <ul>
           <li>
-            <image src="http://www.a-dou.com/mba/image/mem_bkbj.png" />
+            <image src="https://www.a-dou.com/wwwroot/images/mem_bkbj.png" />
             <h3>专科学历</h3>
             <p>毕业之日起至2019年9月</p>
             <p>满足五年工作年限</p>
           </li>
           <li>
-            <image src="http://www.a-dou.com/mba/image/mem_bkbj.png" />
+            <image src="https://www.a-dou.com/wwwroot/images/mem_bkbj.png" />
             <h3>专科学历</h3>
             <p>毕业之日起至2019年9月</p>
             <p>满足五年工作年限</p>
           </li>
           <li>
-            <image src="http://www.a-dou.com/mba/image/mem_bkbj.png" />
+            <image src="https://www.a-dou.com/wwwroot/images/mem_bkbj.png" />
             <h3>专科学历</h3>
             <p>毕业之日起至2019年9月</p>
             <p>满足五年工作年限</p>
           </li>
           <li>
-            <image src="http://www.a-dou.com/mba/image/mem_bkbj.png" />
+            <image src="https://www.a-dou.com/wwwroot/images/mem_bkbj.png" />
             <h3>专科学历</h3>
             <p>毕业之日起至2019年9月</p>
             <p>满足五年工作年限</p>
@@ -103,7 +103,7 @@
           备考流程-提前面试<i></i>
         </h2>
         <div class="content">
-          <image src="http://www.bqeducation.com/public/static/zp/images/tqms_lc.png" mode="aspectFit" />
+          <image src="https://www.a-dou.com/wwwroot/images/tqms_lc.png" mode="aspectFit" />
         </div>
       </div>
       <!--备课流程-笔试环节-->
@@ -111,7 +111,7 @@
         <h2 class="title">
           备课流程-笔试环节<i></i>
         </h2>
-        <image src="http://www.a-dou.com/mba/image/bklc.png" mode="aspectFit" />
+        <image src="https://www.a-dou.com/wwwroot/images/bklc.png" mode="aspectFit" />
       </div>
       <!--MBA考试形式-->
       <div class="global-title drygoods-mba-mbaksxs">
@@ -119,7 +119,7 @@
           MBA考试形式<i></i>
         </h2>
         <div class="content">
-          <image src="http://www.bqeducation.com/public/static/mobi/images/mba.png" mode="aspectFit" />
+          <image src="https://www.a-dou.com/wwwroot/images/mba.png" mode="aspectFit" />
           <h3>提前面试<span>部分院校项目开设提前面试</span></h3>
           <ul>
             <li>
