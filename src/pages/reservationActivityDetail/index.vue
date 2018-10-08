@@ -93,7 +93,7 @@ export default {
   onShareAppMessage(res) {
     return {
       title: "B&Q教育",
-      path: "/pages/activityDetails/main"
+      path: "/pages/reservationActivityDetail/main"
     };
   }
 };

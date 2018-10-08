@@ -162,7 +162,13 @@
 <script>
 export default {
   name: "drygoodsMemComponent",
-  props: ["tabItem"]
+  props: ["tabItem"],
+  onShareAppMessage(res) {
+    return {
+      title: "B&Q教育",
+      path: "/pages/drygoodsMem/main"
+    };
+  }
 };
 </script>
 

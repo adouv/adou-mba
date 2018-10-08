@@ -53,7 +53,7 @@ export default {
   onShareAppMessage(res) {
     return {
       title: "B&Q教育",
-      path: "/pages/exclusive/main"
+      path: "/pages/student/main"
     };
   }
 };

@@ -6,7 +6,7 @@
         <li v-for="(item, index) in schoolList" :index="index" :key="item.Id" @click="openDetails(item.Id)">
           <image :src="imageUrlBase+item.Logo" />
           <div>
-            <h2>{{item.Id}}{{item.Name}}<span>{{item.EnglishName}}</span></h2>
+            <h2>{{item.Name}}<span>{{item.EnglishName}}</span></h2>
             <ul>
               <li>学费：{{item.Tuition}}（{{item.TuitionDescript}}）</li>
               <li>招生人数：{{item.Number}}人</li>
