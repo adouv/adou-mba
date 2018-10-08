@@ -19,13 +19,13 @@
 </template>
 
 <script>
-import mbaComponent from "@/pages/drygoods/mba";
-import memComponent from "@/pages/drygoods/mem";
+import drygoodsMbaComponent from "@/pages/drygoodsMba";
+import drygoodsMemComponent from "@/pages/drygoodsMem";
 export default {
   name: "drygoodsComponent",
   components: {
-    mba: mbaComponent,
-    mem: memComponent
+    mba: drygoodsMbaComponent,
+    mem: drygoodsMemComponent
   },
   data() {
     return {

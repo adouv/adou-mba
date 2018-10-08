@@ -156,7 +156,7 @@
 
 <script>
 export default {
-  name: "mbaComponent",
+  name: "drygoodsMbaComponent",
   props: ["tabItem"]
 };
 </script>

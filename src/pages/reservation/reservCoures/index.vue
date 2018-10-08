@@ -8,7 +8,7 @@
            <div>
              <div>{{item.Price}}元<span>价值{{item.PriceValue}}元</span></div>
              <div>
-               <navigator :url="'/pages/courseDetails/main?nid='+item.Id+'&type=0'">立即预约</navigator>
+               <navigator :url="'/pages/reservationCourseDetail/main?nid='+item.Id+'&type=0'">立即预约</navigator>
              </div>
            </div>
          </li>

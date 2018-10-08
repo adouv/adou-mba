@@ -111,7 +111,11 @@ export default {
             icon: "success",
             success: () => {
               let to =
-                "/pages/courseDetails/main?nid=" +
+                "/pages/" +
+                (this.detail.type == 0
+                  ? "reservationCourseDetail"
+                  : "reservationActivityDetail") +
+                "/main?nid=" +
                 this.detail.Id +
                 "&type=" +
                 this.detail.type;

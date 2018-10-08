@@ -161,7 +161,7 @@
 
 <script>
 export default {
-  name: "memComponent",
+  name: "drygoodsMemComponent",
   props: ["tabItem"]
 };
 </script>
