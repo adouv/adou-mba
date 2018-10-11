@@ -3,97 +3,162 @@
   background: #f3f3f3;
 
   .hb-school-box {
-    position: relative;
     height: 320px;
     width: 100%;
-    // background-image: url("https://www.a-dou.com//wwwroot/images/xxkxq_banner.jpg");
-    // background-color: rgba(255, 255, 255, .5);
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-attachment: fixed;
+    background-image: url("https://www.a-dou.com//wwwroot/images/xxkxq_banner.jpg");
+    background-color: rgba(255, 255, 255, .2);
+    background-repeat: no-repeat;
+    background-position: center;
 
+    //background-attachment: fixed;
     .school-info {
-      position: absolute;
-      top: 0px;
-      left: 0px;
       text-align: center;
       width: 100%;
 
       .school-logo {
-
-        //width: 30%;
-        //margin:0 auto;
         image {
-          width: 80px;
-          height: 80px;
-          margin: 0 auto;
+          width: 100px;
+          height: 100px;
         }
       }
-    }
 
-    .school-name {
-      color: $color1;
-      line-height: 20px;
-      margin-bottom: 10px;
-      font-size: 20px;
-      font-weight: bold;
-      text-transform: uppercase;
-
-      p {
-        line-height: 30px;
-        margin-bottom: 10px;
-        font-family: Arial;
-        font-size: 14px;
-      }
-    }
-
-    .school-conditions {
-      @extend .flex;
-      text-transform: uppercase;
-      font-size: 14px;
-
-      div:nth-child(2) {
-        margin: 0 20px;
-        padding: 0 20px;
-        border-left: 2px solid #000;
-        border-right: 2px solid #000;
-
-      }
-
-      div {
-        p:last-child {
-          color: #ccc;
-        }
-
-        p:first-child {
-          color: #9ebe4c;
-        }
-      }
-    }
-
-    .school-notice {
-      font-size: 15px;
-      text-align: left;
-      padding: 0 25px;
-      color: #fff;
-
-      p {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+      .school-name {
+        color: $color1;
         line-height: 20px;
+        font-weight: normal;
+        text-transform: uppercase;
 
-        span:first-child {
-          width: 25%;
-          padding-right: 10px;
-          text-align: right;
+        h2 {
+          font-size: 15px;
         }
 
-        span:last-child {
-          width: 85%;
+        p {
+          line-height: 30px;
+          margin-bottom: 10px;
+          font-family: Arial;
+          font-size: 13px;
+        }
+      }
+
+      .school-notice {
+        @extend .flex;
+
+        p {
+          border-right: 1px solid $color1;
+          font-size: 13px;
+          color: #fff;
+          padding: 0 20px;
+
+          span {
+            display: block;
+            width: 100%;
+            line-height: 25px;
+
+            &:last-child {
+              color: $color1;
+            }
+          }
+
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+
+      .school-address {
+        margin-top: 20px;
+
+        p {
+          font-size: 13px;
+          color: #fff;
+          padding: 0 20px;
+          line-height: 22px;
+
+          span {
+            &:first-child {
+              padding-right: 10px;
+            }
+          }
         }
       }
     }
+
+    // .school-info {
+    //   text-align: center;
+    //   width: 100%;
+
+    //   .school-logo {
+    //     image {
+    //       width: 80px;
+    //       height: 80px;
+    //       margin: 10px auto;
+    //     }
+    //   }
+    // }
+
+    // .school-name {
+    //   color: $color1;
+    //   line-height: 20px;
+    //   margin-bottom: 10px;
+    //   font-size: 20px;
+    //   font-weight: bold;
+    //   text-transform: uppercase;
+
+    //   p {
+    //     line-height: 30px;
+    //     margin-bottom: 10px;
+    //     font-family: Arial;
+    //     font-size: 14px;
+    //   }
+    // }
+
+    // .school-conditions {
+    //   @extend .flex;
+    //   text-transform: uppercase;
+    //   font-size: 14px;
+
+    //   div:nth-child(2) {
+    //     margin: 0 20px;
+    //     padding: 0 20px;
+    //     border-left: 2px solid #000;
+    //     border-right: 2px solid #000;
+
+    //   }
+
+    //   div {
+    //     p:last-child {
+    //       color: #ccc;
+    //     }
+
+    //     p:first-child {
+    //       color: #9ebe4c;
+    //     }
+    //   }
+    // }
+
+    // .school-notice {
+    //   font-size: 15px;
+    //   text-align: left;
+    //   padding: 0 25px;
+    //   color: #fff;
+
+    //   p {
+    //     display: flex;
+    //     align-items: flex-start;
+    //     justify-content: flex-start;
+    //     line-height: 20px;
+
+    //     span:first-child {
+    //       width: 30%;
+    //       padding-right: 10px;
+    //       text-align: right;
+    //     }
+
+    //     span:last-child {
+    //       width: 70%;
+    //     }
+    //   }
+    // }
   }
 
   .school-student-info {
@@ -101,12 +166,15 @@
     padding: 10px;
     margin: 10px;
     background: #fff;
-    p{
+
+    p {
       font-size: 18px !important;
-      span:first-child{
+
+      span:first-child {
         padding-right: 10px;
       }
-      span:last-child{
+
+      span:last-child {
         font-size: 17px;
       }
     }
@@ -123,9 +191,11 @@
       border-bottom: 1px solid #ccc;
       font-size: 18px;
     }
-    .school-content{
+
+    .school-content {
       font-size: 14px;
     }
+
     .school-introduce-body {
       padding-top: 10px;
 
